@@ -79,28 +79,10 @@
             "outbounds": [
                 "🚀TEHRAN-404",
                 "🚀BERLIN-404",
-                "🇳🇱H2-404",
                 "🇯🇵JP-404"
             ],
             "default": "🚀BERLIN-404",
             "interrupt_exist_connections": false
-        },
-        {
-           "type": "hysteria2",
-           "tag": "🇳🇱H2-404",
-           "server": "212.113.100.126",
-           "server_port": 443,
-           "obfs": {
-           "type": "salamander",
-           "password": "0c9e44a9a1647525"
-        },
-           "password": "517b1fa2800fd55b",
-           "tls": {
-           "enabled": true,
-           "server_name": "www.google.com",
-           "insecure": true,
-           "alpn": "h3"
-        }
         },
         {
            "type" : "vmess",
