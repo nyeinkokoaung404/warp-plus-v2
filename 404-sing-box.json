@@ -79,28 +79,37 @@
             "outbounds": [
                 "\ud83d\ude80TEHRAN-404",
                 "\ud83d\ude80BERLIN-404",
-                "JAPAN\ud83c\uddef\ud83c\uddf5"
+                "\ud83c\uddf3\ud83c\uddf1H2-404",
+                "\ud83c\uddef\ud83c\uddf5JP-404",
+                "\ud83c\uddf8\ud83c\uddecSG-404",
+                "\ud83c\uddfa\ud83c\uddf8US-404",
+                "\ud83c\uddf0\ud83c\uddf7KR-404",
+                "\ud83c\udded\ud83c\uddf0HK-404"
             ],
             "default": "\ud83d\ude80BERLIN-404",
             "interrupt_exist_connections": false
         },
         {
-            "tag": "JAPAN\ud83c\uddef\ud83c\uddf5",
-            "type": "vmess",
-            "server": "152.69.197.60",
-            "server_port": 1069,
-            "uuid": "ac8e26fe-8150-4b60-ae64-82fc77eba2cf",
-            "security": "auto",
-            "alter_id": 0,
-            "tls": {
-                "enabled": false
+            "type": "hysteria2",
+            "tag": "\ud83c\uddf3\ud83c\uddf1H2-404",
+            "server": "212.113.100.126",
+            "server_port": 443,
+            "obfs": {
+                "type": "salamander",
+                "password": "0c9e44a9a1647525"
             },
-            "transport": {}
+            "password": "517b1fa2800fd55b",
+            "tls": {
+                "enabled": true,
+                "server_name": "www.google.com",
+                "insecure": true,
+                "alpn": "h3"
+            }
         },
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "188.114.97.156",
+            "server": "162.159.195.180",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -120,7 +129,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "162.159.192.162",
+            "server": "162.159.192.228",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -138,12 +147,103 @@
             "tcp_fast_open": false
         },
         {
+            "tag": "\ud83c\uddef\ud83c\uddf5JP-404",
+            "type": "vmess",
+            "server": "152.69.197.60",
+            "server_port": 1069,
+            "uuid": "ac8e26fe-8150-4b60-ae64-82fc77eba2cf",
+            "security": "auto",
+            "alter_id": 0,
+            "tls": {
+                "enabled": false
+            },
+            "transport": {}
+        },
+        {
+            "tag": "\ud83c\uddf8\ud83c\uddecSG-404",
+            "type": "vmess",
+            "server": "31.192.234.7",
+            "server_port": 12954,
+            "uuid": "8259cb1c-dd6c-4739-9c88-af550d977525",
+            "security": "auto",
+            "alter_id": 0,
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "64.lwdh.us",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": ""
+                }
+            },
+            "transport": {}
+        },
+        {
+            "tag": "\ud83c\uddfa\ud83c\uddf8US-404",
+            "type": "vmess",
+            "server": "169.197.143.89",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "nicoler.lol",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/linkvws",
+                "headers": {
+                    "Host": "nicoler.lol"
+                },
+                "max_early_data": 0
+            }
+        },
+        {
+            "tag": "\ud83c\uddf0\ud83c\uddf7KR-404",
+            "type": "vmess",
+            "server": "152.70.39.9",
+            "server_port": 26022,
+            "uuid": "e0254dda-dc8c-46b0-8df8-07c453aaafd7",
+            "security": "auto",
+            "alter_id": 0,
+            "tls": {
+                "enabled": false
+            },
+            "transport": {}
+        },
+        {
+            "tag": "\ud83c\udded\ud83c\uddf0HK-404",
+            "type": "vmess",
+            "server": "103.85.25.134",
+            "server_port": 55218,
+            "uuid": "3827a5c8-c031-46cf-848d-e890d0ead803",
+            "security": "auto",
+            "alter_id": 0,
+            "tls": {
+                "enabled": false
+            },
+            "transport": {}
+        },
+        {
             "tag": "Auto",
             "type": "urltest",
             "outbounds": [
                 "\ud83d\ude80TEHRAN-404",
                 "\ud83d\ude80BERLIN-404",
-                "JAPAN\ud83c\uddef\ud83c\uddf5"
+                "\ud83c\uddf3\ud83c\uddf1H2-404",
+                "\ud83c\uddf8\ud83c\uddecSG-404",
+                "\ud83c\uddef\ud83c\uddf5JP-404",
+                "\ud83c\uddfa\ud83c\uddf8US-404",
+                "\ud83c\uddf0\ud83c\uddf7KR-404",
+                "\ud83c\udded\ud83c\uddf0HK-404"
             ],
             "url": "http://connectivitycheck.gstatic.com/generate_204",
             "interval": "10m",
