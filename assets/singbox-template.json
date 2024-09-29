@@ -103,19 +103,6 @@
         }
         },
         {
-           "tag" : "🇯🇵JP-404",
-           "type" : "vmess",
-           "server" : "152.69.197.60",
-           "server_port" : 1069,
-           "uuid" : "ac8e26fe-8150-4b60-ae64-82fc77eba2cf",
-           "security" : "auto",
-           "alter_id" : 0,
-           "tls" : {
-           "enabled" : false
-      }
-            "transport" : {}
-      },
-        {
             "tag": "Auto",
             "type": "urltest",
             "outbounds": [],
