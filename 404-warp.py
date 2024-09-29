@@ -102,7 +102,7 @@ def export_Hiddify(t_ips):
 
 title = (
     "//profile-title: base64:"
-    + base64.b64encode("Women Life Freedom 🤍".encode("utf-8")).decode("utf-8")
+    + base64.b64encode("Women Life Freedom 🫶".encode("utf-8")).decode("utf-8")
     + "\n"
 )
 update_interval = "//profile-update-interval: 1\n"
