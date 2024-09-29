@@ -175,7 +175,7 @@ def export_SingBox(t_ips):
     with open("assets/singbox-template.json", "r") as f:
         data = json.load(f)
 
-    data["outbounds"][1]["outbounds"].extend(["🚀TEHRAN-404", "🚀BERLIN-404", "🇳🇱H2"])
+    data["outbounds"][2]["outbounds"].extend(["🚀TEHRAN-404", "🚀BERLIN-404", "🇳🇱H2"])
 
     tehran_wg = toSingBox("🚀TEHRAN-404", t_ips[0], "direct")
     if tehran_wg:
@@ -188,12 +188,6 @@ def export_SingBox(t_ips):
         data["outbounds"].insert(3, berlin_wg)
     else:
         print("Failed to generate 🚀BERLIN-404 configuration")
-
-    h2_wg = toSingBox("🇳🇱H2", t_ips[0], "direct")
-    if tehran_wg:
-        data["outbounds"].insert(4, h2_wg)
-    else:
-        print("Failed to generate 🇳🇱H2 configuration")
 
     with open("404-sing-box.json", "w") as f:
         json.dump(data, f, indent=4)
