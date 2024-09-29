@@ -79,14 +79,14 @@
             "outbounds": [
                 "🚀TEHRAN-404",
                 "🚀BERLIN-404",
-                "🇯🇵JP-404"
+                "JAPAN🇯🇵"
             ],
             "default": "🚀BERLIN-404",
             "interrupt_exist_connections": false
         },
         {
            "type" : "vmess",
-           "tag" : "🇯🇵JP-404",
+           "tag" : "JAPAN🇯🇵",
            "server" : "152.69.197.60",
            "server_port" : 1069,
            "uuid" : "ac8e26fe-8150-4b60-ae64-82fc77eba2cf",
@@ -94,7 +94,7 @@
            "alter_id" : 0,
            "tls" : {
            "enabled" : false
-        },
+        }
             "transport" : {}
         },
         {
