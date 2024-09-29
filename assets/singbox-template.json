@@ -79,14 +79,14 @@
             "outbounds": [
                 "🚀TEHRAN-404",
                 "🚀BERLIN-404",
-                "🇳🇱HYSTERIA2-404"
+                "🇳🇱H2-404"
             ],
             "default": "🚀BERLIN-404",
             "interrupt_exist_connections": false
         },
         {
            "type": "hysteria2",
-           "tag": "🇳🇱HYSTERIA2-404",
+           "tag": "🇳🇱H2-404",
            "server": "212.113.100.126",
            "server_port": 443,
            "obfs": {
