@@ -102,7 +102,7 @@ def export_Hiddify(t_ips):
 
 title = (
     "//profile-title: base64:"
-    + base64.b64encode("🤍 Women Life Freedom 🤍".encode("utf-8")).decode("utf-8")
+    + base64.b64encode("Women Life Freedom 🤍".encode("utf-8")).decode("utf-8")
     + "\n"
 )
 update_interval = "//profile-update-interval: 1\n"
@@ -111,7 +111,7 @@ profile_web = "//profile-web-page-url: https://github.com/nyeinkokoaung404\n"
 last_modified = "//last update on: " + formatted_time + "\n"
 
 config_prefix, _ = export_Hiddify(Bestip)
-with open("warp.json", "w") as op:
+with open("404-warp.json", "w") as op:
     op.write(
         title + update_interval + sub_info + profile_web + last_modified + config_prefix
     )
@@ -189,7 +189,7 @@ def export_SingBox(t_ips):
     else:
         print("Failed to generate 🚀BERLIN-404 configuration")
 
-    with open("sing-box.json", "w") as f:
+    with open("404-sing-box.json", "w") as f:
         json.dump(data, f, indent=4)
 
 
