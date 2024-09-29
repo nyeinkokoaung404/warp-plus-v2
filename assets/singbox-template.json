@@ -80,7 +80,11 @@
                 "🚀TEHRAN-404",
                 "🚀BERLIN-404",
                 "🇳🇱H2-404",
-                "JAPAN🇯🇵"
+                "🇯🇵JP-404",
+                "🇸🇬SG-404",
+                "🇺🇸US-404",
+                "🇰🇷KR-404",
+                "🇭🇰HK-404"
             ],
             "default": "🚀BERLIN-404",
             "interrupt_exist_connections": false
@@ -103,11 +107,84 @@
         }
         },
         {
-      "tag" : "JAPAN🇯🇵",
+      "tag" : "🇯🇵JP-404",
       "type" : "vmess",
       "server" : "152.69.197.60",
       "server_port" : 1069,
       "uuid" : "ac8e26fe-8150-4b60-ae64-82fc77eba2cf",
+      "security" : "auto",
+      "alter_id" : 0,
+      "tls" : {
+        "enabled" : false
+      },
+      "transport" : {}
+    },
+        {
+      "tag" : "🇸🇬SG-404",
+      "type" : "vmess",
+      "server" : "31.192.234.7",
+      "server_port" : 12954,
+      "uuid" : "8259cb1c-dd6c-4739-9c88-af550d977525",
+      "security" : "auto",
+      "alter_id" : 0,
+      "tls" : {
+        "enabled" : true,
+        "disable_sni" : false,
+        "server_name" : "64.lwdh.us",
+        "insecure" : true,
+        "utls" : {
+          "enabled" : true,
+          "fingerprint" : ""
+        }
+      },
+      "transport" : {}
+    },
+        {
+      "tag" : "🇺🇸US-404",
+      "type" : "vmess",
+      "server" : "169.197.143.89",
+      "server_port" : 443,
+      "uuid" : "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security" : "auto",
+      "alter_id" : 0,
+      "tls" : {
+        "enabled" : true,
+        "disable_sni" : false,
+        "server_name" : "nicoler.lol",
+        "insecure" : true,
+        "utls" : {
+          "enabled" : true,
+          "fingerprint" : "chrome"
+        }
+      },
+      "transport" : {
+        "type" : "ws",
+        "path" : "/linkvws",
+        "headers" : {
+          "Host" : "nicoler.lol"
+        },
+        "max_early_data" : 0
+      }
+    },
+        {
+      "tag" : "🇰🇷KR-404",
+      "type" : "vmess",
+      "server" : "152.70.39.9",
+      "server_port" : 26022,
+      "uuid" : "e0254dda-dc8c-46b0-8df8-07c453aaafd7",
+      "security" : "auto",
+      "alter_id" : 0,
+      "tls" : {
+        "enabled" : false
+      },
+      "transport" : {}
+    },
+        {
+      "tag" : "🇭🇰HK-404",
+      "type" : "vmess",
+      "server" : "103.85.25.134",
+      "server_port" : 55218,
+      "uuid" : "3827a5c8-c031-46cf-848d-e890d0ead803",
       "security" : "auto",
       "alter_id" : 0,
       "tls" : {
