@@ -79,14 +79,14 @@
             "outbounds": [
                 "\ud83d\ude80TEHRAN-404",
                 "\ud83d\ude80BERLIN-404",
-                "\ud83c\uddf3\ud83c\uddf1HYSTERIA2-404"
+                "\ud83c\uddf3\ud83c\uddf1H2-404"
             ],
             "default": "\ud83d\ude80BERLIN-404",
             "interrupt_exist_connections": false
         },
         {
             "type": "hysteria2",
-            "tag": "\ud83c\uddf3\ud83c\uddf1HYSTERIA2-404",
+            "tag": "\ud83c\uddf3\ud83c\uddf1H2-404",
             "server": "212.113.100.126",
             "server_port": 443,
             "obfs": {
@@ -104,7 +104,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "162.159.195.82",
+            "server": "188.114.97.38",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -124,7 +124,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "188.114.98.87",
+            "server": "162.159.192.73",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -147,7 +147,7 @@
             "outbounds": [
                 "\ud83d\ude80TEHRAN-404",
                 "\ud83d\ude80BERLIN-404",
-                "\ud83c\uddf3\ud83c\uddf1HYSTERIA2-404"
+                "\ud83c\uddf3\ud83c\uddf1H2-404"
             ],
             "url": "http://connectivitycheck.gstatic.com/generate_204",
             "interval": "10m",
