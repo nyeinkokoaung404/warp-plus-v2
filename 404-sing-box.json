@@ -46,30 +46,49 @@
         ],
         "rules": [
             {
-                "rule_set": [
-                    "geosite-ir"
-                ],
-                "domain_suffix": ".ir",
+                "domain": "2tnc6zpc9c.cloudflare-gateway.com",
                 "server": "dns-direct"
+            },
+            {
+                "geosite": "category-ads-all",
+                "server": "dns-block",
+                "disable_cache": true
             }
         ],
-        "final": "dns-remote",
+        "fakeip": {
+            "enabled": true,
+            "inet4_range": "198.18.0.0/15",
+            "inet6_range": "fc00::/18"
+        },
         "independent_cache": true
     },
     "inbounds": [
         {
+            "type": "direct",
+            "tag": "dns-in",
+            "listen": "0.0.0.0",
+            "listen_port": 6450,
+            "override_address": "8.8.8.8",
+            "override_port": 53
+        },
+        {
             "type": "tun",
             "tag": "tun-in",
-            "domain_strategy": "prefer_ipv4",
-            "interface_name": "sing-tun",
-            "inet4_address": "172.19.0.1/30",
-            "mtu": 1306,
+            "interface_name": "tun0",
+            "mtu": 9000,
             "auto_route": true,
             "strict_route": true,
-            "stack": "gvisor",
             "endpoint_independent_nat": true,
+            "stack": "system",
             "sniff": true,
-            "sniff_override_destination": false
+            "inet4_address": "172.19.0.1/30"
+        },
+        {
+            "type": "mixed",
+            "tag": "mixed-in",
+            "listen": "0.0.0.0",
+            "listen_port": 2080,
+            "sniff": true
         }
     ],
     "outbounds": [
@@ -99,7 +118,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "188.114.99.255",
+            "server": "188.114.97.53",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -119,7 +138,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "162.159.192.145",
+            "server": "188.114.96.67",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
