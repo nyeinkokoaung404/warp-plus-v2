@@ -94,9 +94,9 @@
            "alter_id" : 0,
            "tls" : {
            "enabled" : false
-        }
+        },
             "transport" : {}
-        },
+        }
         {
             "tag": "Auto",
             "type": "urltest",
