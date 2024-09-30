@@ -84,7 +84,9 @@
                 "🇸🇬SG-404",
                 "🇺🇸US-404",
                 "🇰🇷KR-404",
-                "🇭🇰HK-404"
+                "🇭🇰HK-404",
+                "🇲🇾MY-404",
+                "🇹🇼TW-404",
             ],
             "default": "🚀BERLIN-404",
             "interrupt_exist_connections": false
@@ -191,6 +193,46 @@
         "enabled" : false
       },
       "transport" : {}
+    },
+        {
+      "tag" : "🇲🇾MY-404",
+      "type" : "vmess",
+      "server" : "101.99.91.234",
+      "server_port" : 24474,
+      "uuid" : "990047b1-2ac0-4141-862c-b6c9e24cdac5",
+      "security" : "auto",
+      "alter_id" : 0,
+      "tls" : {
+        "enabled" : false
+      },
+      "transport" : {}
+    },
+        {
+      "tag" : "🇹🇼TW-404",
+      "type" : "vmess",
+      "server" : "55.lwdh.us",
+      "server_port" : 12945,
+      "uuid" : "8259cb1c-dd6c-4739-9c88-af550d977525",
+      "security" : "auto",
+      "alter_id" : 0,
+      "tls" : {
+        "enabled" : true,
+        "disable_sni" : false,
+        "server_name" : false,
+        "insecure" : true,
+        "utls" : {
+          "enabled" : true,
+          "fingerprint" : "chrome"
+        }
+      },
+      "transport" : {
+        "type" : "ws",
+        "path" : false,
+        "headers" : {
+          "Host" : false
+        },
+        "max_early_data" : 0
+      }
     },
         {
             "tag": "Auto",
