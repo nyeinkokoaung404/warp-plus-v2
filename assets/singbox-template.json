@@ -217,8 +217,6 @@
       "alter_id" : 0,
       "tls" : {
         "enabled" : true,
-        "disable_sni" : false,
-        "server_name" : false,
         "insecure" : true,
         "utls" : {
           "enabled" : true,
@@ -226,10 +224,7 @@
         }
       },
       "transport" : {
-        "type" : "ws",
-        "path" : false,
-        "headers" : {
-          "Host" : false
+        "type" : "ws"
         },
         "max_early_data" : 0
       }
