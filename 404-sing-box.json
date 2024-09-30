@@ -84,7 +84,8 @@
                 "\ud83c\uddf8\ud83c\uddecSG-404",
                 "\ud83c\uddfa\ud83c\uddf8US-404",
                 "\ud83c\uddf0\ud83c\uddf7KR-404",
-                "\ud83c\udded\ud83c\uddf0HK-404"
+                "\ud83c\udded\ud83c\uddf0HK-404",
+                "\ud83c\uddf2\ud83c\uddfeMY-404"
             ],
             "default": "\ud83d\ude80BERLIN-404",
             "interrupt_exist_connections": false
@@ -109,7 +110,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "162.159.195.180",
+            "server": "188.114.97.140",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -129,7 +130,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "162.159.192.228",
+            "server": "162.159.195.107",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -233,6 +234,19 @@
             "transport": {}
         },
         {
+            "tag": "\ud83c\uddf2\ud83c\uddfeMY-404",
+            "type": "vmess",
+            "server": "101.99.91.234",
+            "server_port": 24474,
+            "uuid": "990047b1-2ac0-4141-862c-b6c9e24cdac5",
+            "security": "auto",
+            "alter_id": 0,
+            "tls": {
+                "enabled": false
+            },
+            "transport": {}
+        },
+        {
             "tag": "Auto",
             "type": "urltest",
             "outbounds": [
@@ -243,7 +257,8 @@
                 "\ud83c\uddef\ud83c\uddf5JP-404",
                 "\ud83c\uddfa\ud83c\uddf8US-404",
                 "\ud83c\uddf0\ud83c\uddf7KR-404",
-                "\ud83c\udded\ud83c\uddf0HK-404"
+                "\ud83c\udded\ud83c\uddf0HK-404",
+                "\ud83c\uddf2\ud83c\uddfeMY-404"
             ],
             "url": "http://connectivitycheck.gstatic.com/generate_204",
             "interval": "10m",
