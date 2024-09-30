@@ -227,7 +227,6 @@
         "type" : "ws"
         },
         "max_early_data" : 0
-      }
     },
         {
             "tag": "Auto",
