@@ -87,7 +87,8 @@
                 "🇭🇰HK-404",
                 "🇲🇾MY-404",
                 "ATOM(500MB)-404",
-                "🇯🇵JP(1)-404"
+                "🇯🇵JP(1)-404",
+                "🇯🇵JP(2)-404"
             ],
             "default": "🚀BERLIN-404",
             "interrupt_exist_connections": false
@@ -236,6 +237,30 @@
                 "enabled" : true,
                 "public_key" : "lglDb7wrttqBOUTfZilyGbiSwFqBlHtCMciMu9VCxjM",
                 "short_id" : "778f6556"
+            }
+            },
+            "transport" : {}
+        },
+        {
+            "tag" : "🇯🇵JP(2)-404",
+            "type" : "vless",
+            "server" : "jp4.helloco.xyz",
+            "server_port" : 60001,
+            "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
+            "flow" : "xtls-rprx-vision",
+            "tls" : {
+                "enabled" : true,
+                "disable_sni" : false,
+                "server_name" : "python.org",
+                "insecure" : true,
+            "utls" : {
+                "enabled" : true,
+                "fingerprint" : "ios"
+            },
+            "reality" : {
+                "enabled" : true,
+                "public_key" : "zIw3P1C9fGjbQSXNLjyAshZa9rw33_agfe3AldfKhC4",
+                "short_id" : "dbab5b3d"
             }
             },
             "transport" : {}
