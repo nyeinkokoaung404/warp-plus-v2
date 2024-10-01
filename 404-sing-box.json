@@ -87,7 +87,8 @@
                 "\ud83c\udded\ud83c\uddf0HK-404",
                 "\ud83c\uddf2\ud83c\uddfeMY-404",
                 "ATOM(500MB)-404",
-                "\ud83c\uddef\ud83c\uddf5JP(1)-404"
+                "\ud83c\uddef\ud83c\uddf5JP(1)-404",
+                "\ud83c\uddef\ud83c\uddf5JP(2)-404"
             ],
             "default": "\ud83d\ude80BERLIN-404",
             "interrupt_exist_connections": false
@@ -112,7 +113,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "188.114.96.125",
+            "server": "162.159.195.229",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -132,7 +133,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "188.114.99.162",
+            "server": "188.114.96.248",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -281,6 +282,30 @@
             "transport": {}
         },
         {
+            "tag": "\ud83c\uddef\ud83c\uddf5JP(2)-404",
+            "type": "vless",
+            "server": "jp4.helloco.xyz",
+            "server_port": 60001,
+            "uuid": "80748dbe-37ab-4840-a57f-ff225e404fd4",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "python.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "ios"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "zIw3P1C9fGjbQSXNLjyAshZa9rw33_agfe3AldfKhC4",
+                    "short_id": "dbab5b3d"
+                }
+            },
+            "transport": {}
+        },
+        {
             "tag": "Auto",
             "type": "urltest",
             "outbounds": [
@@ -294,7 +319,8 @@
                 "\ud83c\udded\ud83c\uddf0HK-404",
                 "\ud83c\uddf2\ud83c\uddfeMY-404",
                 "ATOM(500MB)-404",
-                "\ud83c\uddef\ud83c\uddf5JP(1)-404"
+                "\ud83c\uddef\ud83c\uddf5JP(1)-404",
+                "\ud83c\uddef\ud83c\uddf5JP(2)-404"
             ],
             "url": "http://connectivitycheck.gstatic.com/generate_204",
             "interval": "10m",
