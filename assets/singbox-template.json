@@ -209,7 +209,7 @@
       "transport" : {}
     },
         {
-      "tag" : "🇯🇵JP(1)-404",
+            "tag" : "🇯🇵JP(1)-404",
       "type" : "vless",
       "server" : "jp3.helloco.xyz",
       "server_port" : 60001,
