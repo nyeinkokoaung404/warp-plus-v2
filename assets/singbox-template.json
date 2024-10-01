@@ -209,12 +209,28 @@
       "transport" : {}
     },
         {
-      "tag" : "🇲🇲-500MB-404",
-      "type" : "shadowsocks",
-      "server" : "139.59.254.150",
-      "server_port" : 1080,
-      "method" : "chacha20-ietf-poly1305",
-      "password" : "coXabDNGz1Ee_3TEw_R_4g"
+      "tag" : "🇯🇵JP(1)-404",
+      "type" : "vless",
+      "server" : "jp3.helloco.xyz",
+      "server_port" : 60001,
+      "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
+      "flow" : "xtls-rprx-vision",
+      "tls" : {
+        "enabled" : true,
+        "disable_sni" : false,
+        "server_name" : "python.org",
+        "insecure" : true,
+        "utls" : {
+          "enabled" : true,
+          "fingerprint" : "qq"
+        },
+        "reality" : {
+          "enabled" : true,
+          "public_key" : "lglDb7wrttqBOUTfZilyGbiSwFqBlHtCMciMu9VCxjM",
+          "short_id" : "778f6556"
+        }
+      },
+      "transport" : {}
     },
         {
             "tag": "Auto",
