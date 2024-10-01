@@ -209,6 +209,14 @@
       "transport" : {}
     },
         {
+            "tag" : "Atom(500MB)-404",
+            "type" : "shadowsocks",
+            "server" : "139.59.254.150",
+            "server_port" : 1080,
+            "method" : "chacha20-ietf-poly1305",
+            "password" : "coXabDNGz1Ee_3TEw_R_4g"
+        },
+        {
             "tag" : "🇯🇵JP(1)-404",
             "type" : "vless",
             "server" : "jp3.helloco.xyz",
