@@ -113,7 +113,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "162.159.195.229",
+            "server": "188.114.97.167",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -133,7 +133,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "188.114.96.248",
+            "server": "188.114.97.133",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
