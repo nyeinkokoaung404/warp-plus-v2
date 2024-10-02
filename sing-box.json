@@ -47,7 +47,7 @@
         "rules": [
             {
                 "rule_set": [
-                    "geosite-ir"
+                    "geosite-private"
                 ],
                 "domain_suffix": ".ir",
                 "server": "dns-direct"
@@ -415,4 +415,23 @@
             "tolerance": 50,
             "idle_timeout": "30m",
             "interrupt_exist_connections": false
+        },
+        {
+            "tag": "direct",
+            "type": "direct"
+        },
+        {
+            "tag": "block",
+            "type": "block"
+        },
+        {
+            "type": "direct",
+            "tag": "bypass"
+        },
+        {
+            "tag": "dns-out",
+            "type": "dns"
         }
+    ]
+    }
+}
