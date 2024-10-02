@@ -90,9 +90,9 @@
                 "🇯🇵JP-1-404",
                 "🇯🇵JP-2-404",
                 "🇹🇭TH-404",
+                "🇬🇧UK-404",
                 "🇭🇰HK-1-404",
-                "🇭🇰HK-2-404",
-                "🇬🇧UK-404"
+                "🇭🇰HK-2-404"
             ],
             "default": "🚀BERLIN-404",
             "interrupt_exist_connections": false
@@ -278,6 +278,30 @@
             "password" : "f8f7aCzcPKbsF8p3"
         },
         {
+            "tag" : "🇬🇧UK-404",
+            "type" : "vless",
+            "server" : "uk2.helloco.xyz",
+            "server_port" : 60001,
+            "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
+            "flow" : "xtls-rprx-vision",
+            "tls" : {
+                "enabled" : true,
+                "disable_sni" : false,
+                "server_name" : "python.org",
+                "insecure" : true,
+            "utls" : {
+                "enabled" : true,
+                "fingerprint" : "chrome"
+            },
+            "reality" : {
+                "enabled" : true,
+                "public_key" : "ekMvKnIDsNHkvshZ3bK7D5qZpSwW0Iyaop9nMfZ2flU",
+                "short_id" : "2500628e"
+            }
+            },
+            "transport" : {}
+        },
+        {
             "tag" : "🇭🇰HK-1-404",
             "type" : "vless",
             "server" : "hk3.helloco.xyz",
@@ -321,30 +345,6 @@
                 "enabled" : true,
                 "public_key" : "Kyrdn7OhtL66JwSRScElBxoFSZLr5beafP4njt_Y_G0",
                 "short_id" : "a3ffb25d"
-            }
-            },
-            "transport" : {}
-        },
-        {
-            "tag" : "🇬🇧UK-404",
-            "type" : "vless",
-            "server" : "uk2.helloco.xyz",
-            "server_port" : 60001,
-            "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
-            "flow" : "xtls-rprx-vision",
-            "tls" : {
-                "enabled" : true,
-                "disable_sni" : false,
-                "server_name" : "python.org",
-                "insecure" : true,
-            "utls" : {
-                "enabled" : true,
-                "fingerprint" : "chrome"
-            },
-            "reality" : {
-                "enabled" : true,
-                "public_key" : "ekMvKnIDsNHkvshZ3bK7D5qZpSwW0Iyaop9nMfZ2flU",
-                "short_id" : "2500628e"
             }
             },
             "transport" : {}
