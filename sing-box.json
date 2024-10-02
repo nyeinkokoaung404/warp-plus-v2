@@ -416,4 +416,3 @@
             "idle_timeout": "30m",
             "interrupt_exist_connections": false
         },
-}
