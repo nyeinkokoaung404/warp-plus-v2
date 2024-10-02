@@ -214,7 +214,7 @@
       "transport" : {}
     },
         {
-            "tag" : "ATOM(500MB)-404",
+            "tag" : "🇲🇲ATOM(500MB)-404",
             "type" : "shadowsocks",
             "server" : "139.59.254.150",
             "server_port" : 1080,
