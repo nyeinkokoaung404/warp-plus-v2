@@ -88,7 +88,8 @@
                 "🇲🇾MY-404",
                 "ATOM(500MB)-404",
                 "🇯🇵JP(1)-404",
-                "🇯🇵JP(2)-404"
+                "🇯🇵JP(2)-404",
+                "🇹🇭TH-404"
             ],
             "default": "🚀BERLIN-404",
             "interrupt_exist_connections": false
@@ -264,6 +265,14 @@
             }
             },
             "transport" : {}
+        },
+        {
+            "tag" : "🇹🇭TH-404",
+            "type" : "shadowsocks",
+            "server" : "119.59.98.58",
+            "server_port" : 990,
+            "method" : "chacha20-ietf-poly1305",
+            "password" : "f8f7aCzcPKbsF8p3"
         },
         {
             "tag": "Auto",
