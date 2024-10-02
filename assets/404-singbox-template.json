@@ -3,20 +3,6 @@
         "level": "warn",
         "timestamp": true
     },
-    "experimental": {
-        "clash_api": {
-            "external_controller": "127.0.0.1:9090",
-            "external_ui": "metacubexd",
-            "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
-            "external_ui_download_detour": "bypass",
-            "default_mode": "rule"
-        },
-        "cache_file": {
-            "enabled": true,
-            "path": "cache.db",
-            "store_fakeip": false
-        }
-    },
     "dns": {
         "servers": [
             {
@@ -468,13 +454,6 @@
         "auto_detect_interface": true,
         "override_android_vpn": true,
         "final": "proxy"
-    },
-    "ntp": {
-        "enabled": false,
-        "server": "time.apple.com",
-        "server_port": 123,
-        "detour": "direct",
-        "interval": "30m"
     },
     "experimental": {
         "cache_file": {
