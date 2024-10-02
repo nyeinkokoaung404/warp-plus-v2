@@ -117,7 +117,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "188.114.99.226",
+            "server": "188.114.99.46",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -137,7 +137,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "162.159.195.14",
+            "server": "188.114.99.75",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -254,7 +254,7 @@
             "transport": {}
         },
         {
-            "tag": "ATOM(500MB)-404",
+            "tag": "\ud83c\uddf2\ud83c\uddf2ATOM(500MB)-404",
             "type": "shadowsocks",
             "server": "139.59.254.150",
             "server_port": 1080,
