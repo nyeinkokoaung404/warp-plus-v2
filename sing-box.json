@@ -44,15 +44,6 @@
                 "address": "rcode://success"
             }
         ],
-        "rules": [
-            {
-                "rule_set": [
-                    "geosite-private"
-                ],
-                "domain_suffix": ".ir",
-                "server": "dns-direct"
-            }
-        ],
         "final": "dns-remote",
         "independent_cache": true
     },
