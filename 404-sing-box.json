@@ -1,6 +1,7 @@
 {
     "log": {
-        "level": "warn",
+        "disabled": false,
+        "level": "fatal",
         "timestamp": true
     },
     "dns": {
@@ -99,6 +100,7 @@
                 "\ud83c\udded\ud83c\uddf0HK-1-404",
                 "\ud83c\udded\ud83c\uddf0HK-2-404"
             ],
+            "default": "\ud83d\ude80BERLIN-404",
             "interrupt_exist_connections": false
         },
         {
@@ -121,7 +123,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "162.159.192.66",
+            "server": "188.114.99.211",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -141,7 +143,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "188.114.98.91",
+            "server": "162.159.192.249",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -510,6 +512,13 @@
         "auto_detect_interface": true,
         "override_android_vpn": true,
         "final": "proxy"
+    },
+    "ntp": {
+        "enabled": false,
+        "server": "time.apple.com",
+        "server_port": 123,
+        "detour": "direct",
+        "interval": "30m"
     },
     "experimental": {
         "cache_file": {
