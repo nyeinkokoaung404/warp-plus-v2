@@ -1,7 +1,6 @@
 {
     "log": {
-        "disabled": false,
-        "level": "fatal",
+        "level": "warn",
         "timestamp": true
     },
     "ntp": {
