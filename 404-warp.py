@@ -96,13 +96,13 @@ formatted_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 
 def export_Hiddify(t_ips):
-    config_prefix = f"warp://{t_ips[0]}?ifp=1-3&ifpm=m4#TEHRAN&&detour=warp://{t_ips[1]}?ifp=1-2&ifpm=m5#BERLIN"
+    config_prefix = f"warp://{t_ips[0]}?ifp=1-3&ifpm=m4#TEHRAN-404&&detour=warp://{t_ips[1]}?ifp=1-2&ifpm=m5#BERLIN-404"
     return config_prefix, formatted_time
 
 
 title = (
     "//profile-title: base64:"
-    + base64.b64encode("Women Life Freedom 🤍".encode("utf-8")).decode("utf-8")
+    + base64.b64encode("Warp+By404".encode("utf-8")).decode("utf-8")
     + "\n"
 )
 update_interval = "//profile-update-interval: 1\n"
