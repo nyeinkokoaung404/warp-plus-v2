@@ -1,6 +1,7 @@
 {
     "log": {
-        "level": "warn",
+        "disabled": false,
+        "level": "fatal",
         "timestamp": true
     },
     "dns": {
@@ -99,6 +100,7 @@
                 "🇭🇰HK-1-404",
                 "🇭🇰HK-2-404"
             ],
+            "default": "🚀BERLIN-404",
             "interrupt_exist_connections": false
         },
         {
@@ -380,7 +382,7 @@
             "type": "dns"
         }
     ],
-    "route": {
+     "route": {
         "rules": [
             {
                 "inbound": "dns-in",
@@ -453,6 +455,13 @@
         "auto_detect_interface": true,
         "override_android_vpn": true,
         "final": "proxy"
+    },
+    "ntp": {
+        "enabled": false,
+        "server": "time.apple.com",
+        "server_port": 123,
+        "detour": "direct",
+        "interval": "30m"
     },
     "experimental": {
         "cache_file": {
