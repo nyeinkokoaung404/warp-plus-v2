@@ -71,16 +71,30 @@
     },
     "inbounds": [
         {
+            "type": "direct",
+            "tag": "dns-in",
+            "listen": "0.0.0.0",
+            "listen_port": 6450,
+            "override_address": "8.8.8.8",
+            "override_port": 53
+        },
+        {
             "type": "tun",
             "tag": "tun-in",
-            "domain_strategy": "prefer_ipv4",
-            "interface_name": "sing-tun",
-            "inet4_address": "172.19.0.1/30",
-            "mtu": 1306,
+            "inet4_address": "172.19.0.1/28",
+            "inet6_address": "fdfe:dcba:9876::1/126",
+            "mtu": 9000,
             "auto_route": true,
             "strict_route": true,
-            "stack": "gvisor",
-            "endpoint_independent_nat": true,
+            "stack": "mixed",
+            "sniff": true,
+            "sniff_override_destination": true
+        },
+        {
+            "type": "mixed",
+            "tag": "mixed-in",
+            "listen": "0.0.0.0",
+            "listen_port": 2080,
             "sniff": true,
             "sniff_override_destination": false
         }
