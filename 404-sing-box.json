@@ -99,7 +99,6 @@
                 "\ud83c\udded\ud83c\uddf0HK-1-404",
                 "\ud83c\udded\ud83c\uddf0HK-2-404"
             ],
-            "default": "\ud83d\ude80BERLIN-404",
             "interrupt_exist_connections": false
         },
         {
@@ -122,7 +121,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "188.114.99.206",
+            "server": "162.159.192.66",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -142,7 +141,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "188.114.99.37",
+            "server": "188.114.98.91",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
