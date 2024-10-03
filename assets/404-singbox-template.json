@@ -1,6 +1,7 @@
 {
-    "log": {
-        "level": "warn",
+     "log": {
+        "disabled": false,
+        "level": "fatal",
         "timestamp": true
     },
     "ntp": {
@@ -12,10 +13,10 @@
     },
     "experimental": {
         "clash_api": {
-            "external_controller": "0.0.0.0:9090",
-            "external_ui": "yacd",
-            "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
-            "external_ui_download_detour": "direct",
+            "external_controller": "127.0.0.1:9090",
+            "external_ui": "metacubexd",
+            "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+            "external_ui_download_detour": "bypass",
             "default_mode": "rule"
         },
         "cache_file": {
@@ -27,21 +28,27 @@
     "dns": {
         "servers": [
             {
-                "address": "1.1.1.1",
+                "tag": "dns-remote",
+                "address": "tcp://185.228.168.9",
                 "address_resolver": "dns-direct",
-                "strategy": "prefer_ipv4",
-                "detour": "proxy",
-                "tag": "dns-remote"
+                "address_strategy": "prefer_ipv4",
+                "strategy": "prefer_ipv4"
             },
             {
-                "address": "8.8.8.8",
+                "tag": "dns-direct",
+                "address": "tcp://8.8.4.4",
+                "address_resolver": "dns-local",
                 "strategy": "prefer_ipv4",
-                "detour": "direct",
-                "tag": "dns-direct"
+                "detour": "direct"
             },
             {
-                "address": "rcode://success",
-                "tag": "dns-block"
+                "tag": "dns-local",
+                "address": "local",
+                "detour": "bypass"
+            },
+            {
+                "tag": "dns-block",
+                "address": "rcode://success"
             }
         ],
         "rules": [
@@ -70,30 +77,16 @@
     },
     "inbounds": [
         {
-            "type": "direct",
-            "tag": "dns-in",
-            "listen": "0.0.0.0",
-            "listen_port": 6450,
-            "override_address": "8.8.8.8",
-            "override_port": 53
-        },
-        {
             "type": "tun",
             "tag": "tun-in",
-            "inet4_address": "172.19.0.1/28",
-            "inet6_address": "fdfe:dcba:9876::1/126",
-            "mtu": 9000,
+            "domain_strategy": "prefer_ipv4",
+            "interface_name": "sing-tun",
+            "inet4_address": "172.19.0.1/30",
+            "mtu": 1306,
             "auto_route": true,
             "strict_route": true,
-            "stack": "mixed",
-            "sniff": true,
-            "sniff_override_destination": true
-        },
-        {
-            "type": "mixed",
-            "tag": "mixed-in",
-            "listen": "0.0.0.0",
-            "listen_port": 2080,
+            "stack": "gvisor",
+            "endpoint_independent_nat": true,
             "sniff": true,
             "sniff_override_destination": false
         }
