@@ -401,13 +401,27 @@
         "final": "Proxy",
         "rules": [
             {
-                "inbound": "dns-in",
+                "type": "logical",
+                "mode": "or",
+                "rules": [
+                    {
+                        "protocol": "dns"
+                    },
+                    {
+                        "port": 53
+                    }
+                ],
                 "outbound": "dns-out"
             },
             {
-                "network": "udp",
-                "port": 53,
-                "outbound": "dns-out"
+                "ip_is_private": true,
+                "outbound": "bypass"
+            },
+            {
+                "domain_suffix": [
+                    ".ir"
+                ],
+                "outbound": "bypass"
             },
             {
                 "rule_set": [
