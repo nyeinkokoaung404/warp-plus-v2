@@ -106,6 +106,8 @@
                 "🇭🇰HK-404",
                 "🇯🇵JP-1-404",
                 "🇯🇵JP-2-404",
+                "🇸🇬SG-1-404",
+                "🇸🇬SG-2-404",
                 "🇬🇧UK-1-404",
                 "🇬🇧UK-2-404",
                 "🇭🇰HK-1-404",
@@ -261,6 +263,54 @@
                 "enabled" : true,
                 "public_key" : "zIw3P1C9fGjbQSXNLjyAshZa9rw33_agfe3AldfKhC4",
                 "short_id" : "dbab5b3d"
+            }
+            },
+            "transport" : {}
+        },
+        {
+            "tag" : "🇸🇬SG-1-404",
+            "type" : "vless",
+            "server" : "sg1.helloco.xyz",
+            "server_port" : 60001,
+            "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
+            "flow" : "xtls-rprx-vision",
+            "tls" : {
+                "enabled" : true,
+                "disable_sni" : false,
+                "server_name" : "python.org",
+                "insecure" : true,
+            "utls" : {
+                "enabled" : true,
+                "fingerprint" : "firefox"
+            },
+            "reality" : {
+                "enabled" : true,
+                "public_key" : "0898XYGggRCKKuad0O-w5ccMWjxvip-JExGyjdv57xA",
+                "short_id" : "9a853fa5"
+            }
+            },
+            "transport" : {}
+        },
+        {
+            "tag" : "🇸🇬SG-2-404",
+            "type" : "vless",
+            "server" : "sg2.helloco.xyz",
+            "server_port" : 60001,
+            "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
+            "flow" : "xtls-rprx-vision",
+            "tls" : {
+                "enabled" : true,
+                "disable_sni" : false,
+                "server_name" : "python.org",
+                "insecure" : true,
+            "utls" : {
+                "enabled" : true,
+                "fingerprint" : "edge"
+            },
+            "reality" : {
+                "enabled" : true,
+                "public_key" : "ScsFDI4Azo72W_UCF3IhV0_w2FCdvOJfnj2kgr9WZxI",
+                "short_id" : "0668540b"
             }
             },
             "transport" : {}
