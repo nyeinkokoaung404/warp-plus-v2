@@ -106,6 +106,8 @@
                 "\ud83c\udded\ud83c\uddf0HK-404",
                 "\ud83c\uddef\ud83c\uddf5JP-1-404",
                 "\ud83c\uddef\ud83c\uddf5JP-2-404",
+                "\ud83c\uddf8\ud83c\uddecSG-1-404",
+                "\ud83c\uddf8\ud83c\uddecSG-2-404",
                 "\ud83c\uddec\ud83c\udde7UK-1-404",
                 "\ud83c\uddec\ud83c\udde7UK-2-404",
                 "\ud83c\udded\ud83c\uddf0HK-1-404",
@@ -134,7 +136,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "188.114.97.104",
+            "server": "188.114.96.128",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -154,7 +156,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "162.159.195.6",
+            "server": "188.114.98.107",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -306,6 +308,54 @@
             "transport": {}
         },
         {
+            "tag": "\ud83c\uddf8\ud83c\uddecSG-1-404",
+            "type": "vless",
+            "server": "sg1.helloco.xyz",
+            "server_port": 60001,
+            "uuid": "80748dbe-37ab-4840-a57f-ff225e404fd4",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "python.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0898XYGggRCKKuad0O-w5ccMWjxvip-JExGyjdv57xA",
+                    "short_id": "9a853fa5"
+                }
+            },
+            "transport": {}
+        },
+        {
+            "tag": "\ud83c\uddf8\ud83c\uddecSG-2-404",
+            "type": "vless",
+            "server": "sg2.helloco.xyz",
+            "server_port": 60001,
+            "uuid": "80748dbe-37ab-4840-a57f-ff225e404fd4",
+            "flow": "xtls-rprx-vision",
+            "tls": {
+                "enabled": true,
+                "disable_sni": false,
+                "server_name": "python.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "edge"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ScsFDI4Azo72W_UCF3IhV0_w2FCdvOJfnj2kgr9WZxI",
+                    "short_id": "0668540b"
+                }
+            },
+            "transport": {}
+        },
+        {
             "tag": "\ud83c\uddec\ud83c\udde7UK-1-404",
             "type": "vless",
             "server": "uk1.helloco.xyz",
@@ -415,6 +465,8 @@
                 "\ud83c\udded\ud83c\uddf0HK-404",
                 "\ud83c\uddef\ud83c\uddf5JP-1-404",
                 "\ud83c\uddef\ud83c\uddf5JP-2-404",
+                "\ud83c\uddf8\ud83c\uddecSG-1-404",
+                "\ud83c\uddf8\ud83c\uddecSG-2-404",
                 "\ud83c\uddec\ud83c\udde7UK-1-404",
                 "\ud83c\uddec\ud83c\udde7UK-2-404",
                 "\ud83c\udded\ud83c\uddf0HK-1-404",
