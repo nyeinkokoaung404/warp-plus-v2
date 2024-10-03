@@ -4,12 +4,19 @@
         "level": "fatal",
         "timestamp": true
     },
+    "ntp": {
+        "enabled": false,
+        "server": "time.apple.com",
+        "server_port": 123,
+        "detour": "direct",
+        "interval": "30m"
+    },
     "experimental": {
         "clash_api": {
-            "external_controller": "127.0.0.1:9090",
-            "external_ui": "metacubexd",
-            "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
-            "external_ui_download_detour": "bypass",
+            "external_controller": "0.0.0.0:9090",
+            "external_ui": "yacd",
+            "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
+            "external_ui_download_detour": "direct",
             "default_mode": "rule"
         },
         "cache_file": {
@@ -123,7 +130,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "162.159.192.125",
+            "server": "188.114.99.87",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -143,7 +150,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "188.114.99.88",
+            "server": "188.114.98.183",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
