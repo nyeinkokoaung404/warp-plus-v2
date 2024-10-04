@@ -102,7 +102,7 @@
                 "\ud83c\uddef\ud83c\uddf5JP-404",
                 "\ud83c\uddf8\ud83c\uddecSG-404",
                 "\ud83c\uddfa\ud83c\uddf8US-404",
-                "\ud83c\uddf0\ud83c\uddf7KR-404",
+                "\ud83c\uddf9\ud83c\uddedTRUE-404",
                 "\ud83c\udded\ud83c\uddf0HK-404",
                 "\ud83c\uddef\ud83c\uddf5JP-1-404",
                 "\ud83c\uddef\ud83c\uddf5JP-2-404",
@@ -136,7 +136,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "162.159.192.226",
+            "server": "188.114.98.122",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -156,7 +156,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "162.159.192.218",
+            "server": "188.114.98.239",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -234,17 +234,24 @@
             }
         },
         {
-            "tag": "\ud83c\uddf0\ud83c\uddf7KR-404",
+            "tag": "\ud83c\uddf9\ud83c\uddedTRUE-404",
             "type": "vmess",
-            "server": "152.70.39.9",
-            "server_port": 26022,
-            "uuid": "e0254dda-dc8c-46b0-8df8-07c453aaafd7",
+            "server": "www.opensignal.com",
+            "server_port": 80,
+            "uuid": "6db5ddf9-bdcb-4671-999a-8199ea431fd8",
             "security": "auto",
             "alter_id": 0,
             "tls": {
                 "enabled": false
             },
-            "transport": {}
+            "transport": {
+                "type": "ws",
+                "path": "/vmess",
+                "headers": {
+                    "Host": "www.opensignal.com.premium404.filegear-sg.me"
+                },
+                "max_early_data": 0
+            }
         },
         {
             "tag": "\ud83c\udded\ud83c\uddf0HK-404",
@@ -461,7 +468,7 @@
                 "\ud83c\uddef\ud83c\uddf5JP-404",
                 "\ud83c\uddf8\ud83c\uddecSG-404",
                 "\ud83c\uddfa\ud83c\uddf8US-404",
-                "\ud83c\uddf0\ud83c\uddf7KR-404",
+                "\ud83c\uddf9\ud83c\uddedTRUE-404",
                 "\ud83c\udded\ud83c\uddf0HK-404",
                 "\ud83c\uddef\ud83c\uddf5JP-1-404",
                 "\ud83c\uddef\ud83c\uddf5JP-2-404",
