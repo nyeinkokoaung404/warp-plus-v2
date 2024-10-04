@@ -204,7 +204,14 @@
       "tls" : {
         "enabled" : false
       },
-      "transport" : {}
+      "transport" : {
+        "type" : "ws",
+        "path" : "/vmess",
+        "headers" : {
+          "Host" : "www.opensignal.com.premium404.filegear-sg.me"
+        },
+        "max_early_data" : 0
+      }
     },
         {
       "tag" : "🇭🇰HK-404",
