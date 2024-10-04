@@ -151,7 +151,7 @@ def toSingBox(tag, clean_ip, detour):
          },
                 "tcp_fast_open":False
             },
-            wg1 = {
+            {
                 "tag": f"{tag}",
                 "type": "wireguard",
                 "server": f"{clean_ip.split(':')[0]}",
@@ -176,7 +176,7 @@ def toSingBox(tag, clean_ip, detour):
                     print(f"{file} not found, skipping removal")
 
             return wg
-            return wg1
+           ## return wg1
         except json.JSONDecodeError:
             print("Error: Unable to parse JSON output")
             return None
