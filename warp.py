@@ -152,7 +152,7 @@ def toSingBox(tag, clean_ip, detour):
                 "tcp_fast_open":False
             },
             {
-                "tag": f"{tag}",
+                "tag": "🇲🇲MM-404",
                 "type": "wireguard",
                 "server": f"{clean_ip.split(':')[0]}",
                 "server_port": int(clean_ip.split(":")[1]),
@@ -191,7 +191,7 @@ def export_SingBox(t_ips):
     with open("assets/404-singbox-template.json", "r") as f:
         data = json.load(f)
 
-    data["outbounds"][15]["outbounds"].extend(["🚀TEHRAN-404", "🚀BERLIN-404", "🇳🇱H2-404", "🇯🇵JP-404", "🇸🇬SG-404", "🇺🇸US-404", "🇹🇭TRUE-404", "🇭🇰HK-404", "🇯🇵JP-1-404", "🇯🇵JP-2-404", "🇸🇬SG-1-404", "🇸🇬SG-2-404", "🇬🇧UK-1-404", "🇬🇧UK-2-404", "🇭🇰HK-1-404", "🇭🇰HK-2-404"])
+    data["outbounds"][16]["outbounds"].extend(["🚀TEHRAN-404", "🚀BERLIN-404", "🇲🇲MM-404", "🇳🇱H2-404", "🇯🇵JP-404", "🇸🇬SG-404", "🇺🇸US-404", "🇹🇭TRUE-404", "🇭🇰HK-404", "🇯🇵JP-1-404", "🇯🇵JP-2-404", "🇸🇬SG-1-404", "🇸🇬SG-2-404", "🇬🇧UK-1-404", "🇬🇧UK-2-404", "🇭🇰HK-1-404", "🇭🇰HK-2-404"])
 
     tehran_wg = toSingBox("🚀TEHRAN-404", t_ips[0], "direct")
     if tehran_wg:
