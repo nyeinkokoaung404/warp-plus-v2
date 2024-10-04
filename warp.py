@@ -154,8 +154,8 @@ def toSingBox(tag, clean_ip, detour):
             {
                 "tag": f"{tag}",
                 "type": "wireguard",
-                "server": f"{clean_ip.split(':')[2]}",
-                "server_port": int(clean_ip.split(":")[3]),
+                "server": f"{clean_ip.split(':')[0]}",
+                "server_port": int(clean_ip.split(":")[1]),
                 "local_address": [
                     "172.16.0.2/32",
                     "2606:4700:110:8735:bb29:91bc:1c82:aa73/128",
