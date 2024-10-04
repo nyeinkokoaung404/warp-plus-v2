@@ -102,7 +102,7 @@
                 "🇯🇵JP-404",
                 "🇸🇬SG-404",
                 "🇺🇸US-404",
-                "🇰🇷KR-404",
+                "🇹🇭TRUE-404",
                 "🇭🇰HK-404",
                 "🇯🇵JP-1-404",
                 "🇯🇵JP-2-404",
@@ -194,11 +194,11 @@
       }
     },
         {
-      "tag" : "🇰🇷KR-404",
+      "tag" : "🇹🇭TRUE-404",
       "type" : "vmess",
-      "server" : "152.70.39.9",
-      "server_port" : 26022,
-      "uuid" : "e0254dda-dc8c-46b0-8df8-07c453aaafd7",
+      "server" : "www.opensignal.com",
+      "server_port" : 80,
+      "uuid" : "6db5ddf9-bdcb-4671-999a-8199ea431fd8",
       "security" : "auto",
       "alter_id" : 0,
       "tls" : {
