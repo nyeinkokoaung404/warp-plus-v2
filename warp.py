@@ -150,6 +150,22 @@ def toSingBox(tag, clean_ip, detour):
                 "insecure":True
          },
                 "tcp_fast_open":False
+            },
+            {
+                "tag": f"{tag}",
+                "type": "wireguard",
+                "server": f"{clean_ip.split(':')[0]}",
+                "server_port": int(clean_ip.split(":")[1]),
+                "local_address": [
+                    "172.16.0.2/32",
+                    "2606:4700:110:8735:bb29:91bc:1c82:aa73/128",
+                ],
+                "private_key": f"{data['private_key']}",
+                "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+                "mtu": 1300,
+                "reserved": data["config"]["reserved"],
+                "detour": f"{detour}",
+                "workers": 2,
             }
 
             for file in ["api.sh"]:
