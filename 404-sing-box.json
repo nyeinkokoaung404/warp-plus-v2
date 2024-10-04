@@ -22,14 +22,14 @@
         "servers": [
             {
                 "tag": "dns-remote",
-                "address": "tcp://1.1.1.1",
+                "address": "tcp://185.228.168.9",
                 "address_resolver": "dns-direct",
                 "address_strategy": "prefer_ipv4",
                 "strategy": "prefer_ipv4"
             },
             {
                 "tag": "dns-direct",
-                "address": "tcp://8.8.8.8",
+                "address": "tcp://8.8.4.4",
                 "address_resolver": "dns-local",
                 "strategy": "prefer_ipv4",
                 "detour": "direct"
@@ -118,7 +118,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "188.114.98.104",
+            "server": "162.159.195.77",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -138,7 +138,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "188.114.97.119",
+            "server": "188.114.99.142",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
