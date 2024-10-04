@@ -206,6 +206,18 @@ def export_SingBox(t_ips):
     else:
         print("Failed to generate 🚀BERLIN-404 configuration")
 
+    tehran_nkka = toSingBox("TEHRAN", t_ips[0], "direct")
+    if tehran_nkka:
+        data["outbounds"].insert(2, tehran_nkka)
+    else:
+        print("Failed to generate TEHRAN configuration")
+
+    berlin_nkka = toSingBox("BERLIN", t_ips[1], "TEHRAN")
+    if berlin_nkka:
+        data["outbounds"].insert(3, berlin_nkka)
+    else:
+        print("Failed to generate BERLIN configuration")
+
     with open("sing-box.json", "w") as f:
         json.dump(data, f, indent=4)
 
