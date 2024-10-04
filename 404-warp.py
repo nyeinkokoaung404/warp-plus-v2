@@ -172,7 +172,7 @@ def toSingBox(tag, clean_ip, detour):
 
 
 def export_SingBox(t_ips):
-    with open("assets/sing-box.json", "r") as f:
+    with open("assets/sing-box-template.json", "r") as f:
         data = json.load(f)
 
     data["outbounds"][15]["outbounds"].extend(["🚀TEHRAN-404", "🚀BERLIN-404", "🇳🇱H2-404", "🇸🇬SG-404", "🇯🇵JP-404", "🇺🇸US-404", "🇰🇷KR-404", "🇭🇰HK-404", "🇯🇵JP-1-404", "🇯🇵JP-2-404", "🇸🇬SG-1-404", "🇸🇬SG-2-404", "🇬🇧UK-1-404", "🇬🇧UK-2-404", "🇭🇰HK-1-404", "🇭🇰HK-2-404"])
