@@ -121,7 +121,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "162.159.192.149",
+            "server": "162.159.195.21",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -141,7 +141,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "162.159.192.24",
+            "server": "188.114.99.89",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -279,7 +279,7 @@
         {
             "tag": "\ud83c\uddef\ud83c\uddf5JP-1-404",
             "type": "vless",
-            "server": "jp3.helloco.xyz",
+            "server": "jp1.helloco.xyz",
             "server_port": 60001,
             "uuid": "80748dbe-37ab-4840-a57f-ff225e404fd4",
             "flow": "xtls-rprx-vision",
@@ -290,12 +290,12 @@
                 "insecure": true,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "qq"
+                    "fingerprint": "safari"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "lglDb7wrttqBOUTfZilyGbiSwFqBlHtCMciMu9VCxjM",
-                    "short_id": "778f6556"
+                    "public_key": "NOWa7YT3JKzIEa3jYxsPFpC0xe_PZprlDapoExtWJTU",
+                    "short_id": "bbbdbb1d"
                 }
             },
             "transport": {}
@@ -314,12 +314,12 @@
                 "insecure": true,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "ios"
+                    "fingerprint": "qq"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "zIw3P1C9fGjbQSXNLjyAshZa9rw33_agfe3AldfKhC4",
-                    "short_id": "dbab5b3d"
+                    "public_key": "TTPcfOT851FXonrhOiySGnu7yNcbRB_8PlH496i8wFY",
+                    "short_id": "ec81680f"
                 }
             },
             "transport": {}
