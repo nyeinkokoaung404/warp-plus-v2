@@ -263,7 +263,7 @@
         {
             "tag" : "🇯🇵JP-2-404",
             "type" : "vless",
-            "server" : "jp4.helloco.xyz",
+            "server" : "jp2.helloco.xyz",
             "server_port" : 60001,
             "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
             "flow" : "xtls-rprx-vision",
