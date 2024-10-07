@@ -239,7 +239,7 @@
         {
             "tag" : "🇯🇵JP-1-404",
             "type" : "vless",
-            "server" : "jp3.helloco.xyz",
+            "server" : "jp1.helloco.xyz",
             "server_port" : 60001,
             "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
             "flow" : "xtls-rprx-vision",
@@ -250,12 +250,12 @@
                 "insecure" : true,
             "utls" : {
                 "enabled" : true,
-                "fingerprint" : "qq"
+                "fingerprint" : "safari"
             },
             "reality" : {
                 "enabled" : true,
-                "public_key" : "lglDb7wrttqBOUTfZilyGbiSwFqBlHtCMciMu9VCxjM",
-                "short_id" : "778f6556"
+                "public_key" : "NOWa7YT3JKzIEa3jYxsPFpC0xe_PZprlDapoExtWJTU",
+                "short_id" : "bbbdbb1d"
             }
             },
             "transport" : {}
@@ -274,12 +274,12 @@
                 "insecure" : true,
             "utls" : {
                 "enabled" : true,
-                "fingerprint" : "ios"
+                "fingerprint" : "qq"
             },
             "reality" : {
                 "enabled" : true,
-                "public_key" : "zIw3P1C9fGjbQSXNLjyAshZa9rw33_agfe3AldfKhC4",
-                "short_id" : "dbab5b3d"
+                "public_key" : "TTPcfOT851FXonrhOiySGnu7yNcbRB_8PlH496i8wFY",
+                "short_id" : "ec81680f"
             }
             },
             "transport" : {}
