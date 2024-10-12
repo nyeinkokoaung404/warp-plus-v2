@@ -240,12 +240,11 @@
     },
         {
             "tag" : "🇯🇵JP-1-404",
-            "type" : "shadowsocksr",
-            "server" : "jp-am48-6.eqnode.net",
-            "server_port" : 8081,
+            "type" : "shadowsocks",
+            "server" : "57.180.242.217",
+            "server_port" : 443,
             "method" : "aes-256-cfb",
-            "obfs" : "tls1.2_ticket_auth",
-            "password" : "eAokbaDN6"
+            "password" : "amazonskr05"
         },
         {
             "tag" : "🇯🇵JP-2-404",
