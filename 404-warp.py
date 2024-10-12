@@ -5,7 +5,7 @@ import os
 import datetime
 import base64
 import json
-# i Am 4-0-4
+# i Am 4-0-4 🫶
 warp_cidr = [
     "162.159.192.0/24",
     "162.159.193.0/24",
