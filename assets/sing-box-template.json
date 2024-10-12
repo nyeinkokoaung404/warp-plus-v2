@@ -245,7 +245,6 @@
             "server_port" : 8081,
             "method" : "aes-256-cfb",
             "obfs" : "tls1.2_ticket_auth",
-            "proto" : "origin",
             "password" : "eAokbaDN6"
         },
         {
