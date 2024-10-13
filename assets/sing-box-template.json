@@ -260,12 +260,12 @@
                 "insecure" : true,
             "utls" : {
                 "enabled" : true,
-                "fingerprint" : "qq"
+                "fingerprint" : "chrome"
             },
             "reality" : {
                 "enabled" : true,
-                "public_key" : "TTPcfOT851FXonrhOiySGnu7yNcbRB_8PlH496i8wFY",
-                "short_id" : "ec81680f"
+                "public_key" : "rWAzHXZnWapBkhESdKWg-T8oGDFTVnyYQrx72SG4OzQ",
+                "short_id" : "90bbc2d9"
             }
             },
             "transport" : {}
