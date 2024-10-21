@@ -92,7 +92,8 @@
          "🇯🇵Japan",
          "🇲🇲ATOM(500MB)",
          "Japan-1🇯🇵",
-         "Japan-2🇯🇵"
+         "Japan-2🇯🇵",
+         "🇹🇭True-TH"
        ],
        "tag": "proxy",
        "type": "selector"
@@ -109,7 +110,8 @@
          "🇯🇵Japan",
          "🇲🇲ATOM(500MB)",
          "Japan-1🇯🇵",
-         "Japan-2🇯🇵"
+         "Japan-2🇯🇵",
+         "🇹🇭True-TH"
        ],
        "tag": "auto",
        "tolerance": 50,
@@ -293,7 +295,30 @@
             "server_port": 443,
             "method": "aes-256-cfb",
             "password": "amazonskr05"
-        }
+        },
+      {
+      "tag" : "🇹🇭True-TH",
+      "type" : "vmess",
+      "server" : "www.opensignal.com",
+      "server_port" : 80,
+      "uuid" : "bdd29ad9-1294-4a7c-a131-bc93089c4763",
+      "security" : "auto",
+      "alter_id" : 0,
+      "tls" : {
+        "enabled" : false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/@nkka404",
+          "headers": {
+            "host": "www.opensignal.com.fourzerofour.web.id"
+          }
+        },
+        "security": "none"
+      },
+      "transport" : {}
+    }
    ],
    "route": {
      "auto_detect_interface": true,
