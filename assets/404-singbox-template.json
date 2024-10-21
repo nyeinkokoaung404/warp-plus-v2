@@ -302,7 +302,7 @@
       {
       "tag" : "🇯🇵Japan",
       "type" : "vmess",
-      "server" : "152.69.197.60",
+      "server" : "jp.fourzerofour.web.id",
       "server_port" : 1069,
       "uuid" : "ac8e26fe-8150-4b60-ae64-82fc77eba2cf",
       "security" : "auto",
@@ -315,7 +315,7 @@
       {
       "tag" : "🇭🇰HK",
       "type" : "vmess",
-      "server" : "103.85.25.134",
+      "server" : "hk.fourzerofour.web.id",
       "server_port" : 55218,
       "uuid" : "3827a5c8-c031-46cf-848d-e890d0ead803",
       "security" : "auto",
