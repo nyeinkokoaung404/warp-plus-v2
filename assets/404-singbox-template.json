@@ -81,6 +81,8 @@
        "outbounds": [
          "auto",
          "direct",
+         "🚀TEHRAN-404",
+         "🚀BERLIN-404",
          "@nkka404",
          "🇳🇱H2-404",
          "🇲🇲ATOM(500MB)-404",
@@ -92,6 +94,8 @@
      {
        "interval": "10m",
        "outbounds": [
+         "🚀TEHRAN-404",
+         "🚀BERLIN-404",
          "@nkka404",
          "🇳🇱H2-404",
          "🇲🇲ATOM(500MB)-404",
@@ -149,7 +153,7 @@
       {
            "type": "hysteria2",
            "tag": "🇳🇱H2-404",
-           "server": "212.113.100.126",
+           "server": "wavemoney.com.mm",
            "server_port": 443,
            "obfs": {
            "type": "salamander",
