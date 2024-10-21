@@ -81,7 +81,8 @@
        "outbounds": [
          "auto",
          "direct",
-         "@nkka404-iVPN.Pro"
+         "@nkka404-iVPN.Pro",
+         "🇲🇲ATOM(500MB)"
        ],
        "tag": "proxy",
        "type": "selector"
@@ -89,7 +90,8 @@
      {
        "interval": "10m",
        "outbounds": [
-         "@KevinZakarian-iVPN.Pro"
+         "@nkka404-iVPN.Pro",
+         "🇲🇲ATOM(500MB)"
        ],
        "tag": "auto",
        "tolerance": 50,
@@ -139,7 +141,15 @@
           ]
          }
        }
-     }
+     },
+      {
+            "tag": "🇲🇲ATOM(500MB)",
+            "type": "shadowsocks",
+            "server": "188.166.246.155",
+            "server_port": 22100,
+            "method": "chacha20-ietf-poly1305",
+            "password": "mVORFAsh6K8wkBI8nJAEEX1vdTgL4dY7tubMIZ4E6Io="
+        }
    ],
    "route": {
      "auto_detect_interface": true,
