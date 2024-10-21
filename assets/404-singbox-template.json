@@ -81,8 +81,10 @@
        "outbounds": [
          "auto",
          "direct",
-         "@nkka404-iVPN.Pro",
-         "🇲🇲ATOM(500MB)"
+         "t.me/nkka404",
+         "Channel-404",
+         "🇲🇲ATOM-1(500MB)",
+         "🇲🇲ATOM-2(500MB)"
        ],
        "tag": "proxy",
        "type": "selector"
@@ -90,8 +92,10 @@
      {
        "interval": "10m",
        "outbounds": [
-         "@nkka404-iVPN.Pro",
-         "🇲🇲ATOM(500MB)"
+         "t.me/nkka404",
+         "Channel-404",
+         "🇲🇲ATOM-1(500MB)",
+         "🇲🇲ATOM-2(500MB)"
        ],
        "tag": "auto",
        "tolerance": 50,
@@ -112,7 +116,7 @@
      },
      {
        "type": "hysteria2",
-       "tag": "@nkka404-iVPN.Pro",
+       "tag": "t.me/nkka404",
        "server_port": 443,
        "obfs": {
          "type": "salamander",
@@ -143,7 +147,32 @@
        }
      },
       {
-            "tag": "🇲🇲ATOM(500MB)",
+            "type": "hysteria2",
+            "tag": "Channel-404",
+            "server": "212.113.100.126",
+            "server_port": 443,
+            "obfs": {
+                "type": "salamander",
+                "password": "0c9e44a9a1647525"
+            },
+            "password": "517b1fa2800fd55b",
+            "tls": {
+                "enabled": true,
+                "server_name": "www.google.com",
+                "insecure": true,
+                "alpn": "h3"
+            }
+        },
+      {
+            "tag": "🇲🇲ATOM-1(500MB)",
+            "type": "shadowsocks",
+            "server": "188.166.246.155",
+            "server_port": 22100,
+            "method": "chacha20-ietf-poly1305",
+            "password": "mVORFAsh6K8wkBI8nJAEEX1vdTgL4dY7tubMIZ4E6Io="
+        },
+      {
+            "tag": "🇲🇲ATOM-2(500MB)",
             "type": "shadowsocks",
             "server": "188.166.246.155",
             "server_port": 22100,
