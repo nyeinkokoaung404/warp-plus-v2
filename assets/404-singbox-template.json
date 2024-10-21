@@ -326,53 +326,53 @@
       "transport" : {}
     },
       {
-      "tag" : "🇮🇪IE",
-      "type" : "shadowsocks",
-      "server" : "series-a2-mec.samanehha.co",
-      "server_port" : 443,
-      "method" : "chacha20-ietf-poly1305",
-      "password" : "u17T3BvpYaaiuW2c"
-    },
+            "tag": "🇮🇪IE",
+            "type": "shadowsocks",
+            "server": "series-a2-mec.samanehha.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "u17T3BvpYaaiuW2c"
+        },
       {
-      "tag" : "🇵🇱Poland",
-      "type" : "shadowsocks",
-      "server" : "54.36.174.181",
-      "server_port" : 2375,
-      "method" : "aes-256-gcm",
-      "password" : "faBAoD54k87UJG7"
-    },
+            "tag": "🇵🇱Poland",
+            "type": "shadowsocks",
+            "server": "pl.fourzerofour.web.id",
+            "server_port": 2375,
+            "method": "aes-256-gcm",
+            "password": "faBAoD54k87UJG7"
+        },
       {
-      "tag" : "🇺🇸United+States",
-      "type" : "shadowsocks",
-      "server" : "205.134.180.137",
-      "server_port" : 443,
-      "method" : "chacha20-ietf-poly1305",
-      "password" : "g13S7doXar0A"
-    },
+            "tag": "🇺🇸United+States",
+            "type": "shadowsocks",
+            "server": "us.fourzerofour.web.id",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "g13S7doXar0A"
+        },
       {
-      "tag" : "🇬🇧GB",
-      "type" : "shadowsocks",
-      "server" : "series-a2.varzesh360.co",
-      "server_port" : 443,
-      "method" : "chacha20-ietf-poly1305",
-      "password" : "mps3FwmDjLrWaOVg"
-    },
+            "tag": "🇬🇧GB",
+            "type": "shadowsocks",
+            "server": "series-a2.varzesh360.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "mps3FwmDjLrWaOVg"
+        },
       {
-      "tag" : "🇩🇪Germany",
-      "type" : "shadowsocks",
-      "server" : "217.182.198.219",
-      "server_port" : 5000,
-      "method" : "aes-256-gcm",
-      "password" : "Y6R9pAtvxxzmGC"
-    },
+            "tag": "🇩🇪Germany",
+            "type": "shadowsocks",
+            "server": "gm.fourzerofour.web.id",
+            "server_port": 5000,
+            "method": "aes-256-gcm",
+            "password": "Y6R9pAtvxxzmGC"
+        },
       {
-      "tag" : "🇫🇷France",
-      "type" : "shadowsocks",
-      "server" : "149.202.82.172",
-      "server_port" : 8008,
-      "method" : "aes-256-gcm",
-      "password" : "XKFKl2rULjIp74"
-    }
+            "tag": "🇫🇷France",
+            "type": "shadowsocks",
+            "server": "fr.fourzerofour.web.id",
+            "server_port": 8008,
+            "method": "aes-256-gcm",
+            "password": "XKFKl2rULjIp74"
+        }
    ],
    "route": {
      "auto_detect_interface": true,
