@@ -83,10 +83,10 @@
          "direct",
          "🚀TEHRAN-404",
          "🚀BERLIN-404",
-         "t.me/nkka404",
-         "Channel-404",
-         "CF-ID-GCP",
-         "CF-SG-AWS",
+         "🏠t.me/nkka404",
+         "🏠Channel-404",
+         "☁️CF-ID-GCP",
+         "☁️CF-SG-AWS",
          "🇭🇰CF-HK",
          "🇹🇼CF-TW",
          "🇹🇭True-TH",
@@ -106,12 +106,10 @@
      {
        "interval": "10m",
        "outbounds": [
-         "🚀TEHRAN-404",
-         "🚀BERLIN-404",
-         "t.me/nkka404",
-         "Channel-404",
-         "CF-ID-GCP",
-         "CF-SG-AWS",
+         "🏠t.me/nkka404",
+         "🏠Channel-404",
+         "☁️CF-ID-GCP",
+         "☁️CF-SG-AWS",
          "🇭🇰CF-HK",
          "🇹🇼CF-TW",
          "🇹🇭True-TH",
@@ -144,7 +142,7 @@
      },
      {
        "type": "hysteria2",
-       "tag": "t.me/nkka404",
+       "tag": "🏠t.me/nkka404",
        "server_port": 443,
        "obfs": {
          "type": "salamander",
@@ -176,7 +174,7 @@
      },
       {
             "type": "hysteria2",
-            "tag": "Channel-404",
+            "tag": "🏠Channel-404",
             "server": "212.113.100.126",
             "server_port": 443,
             "obfs": {
@@ -192,7 +190,7 @@
             }
         },
       {
-            "tag": "CF-ID-GCP",
+            "tag": "☁️CF-ID-GCP",
             "type": "vless",
             "server": "mpt.com.mm",
             "server_port": 443,
@@ -212,7 +210,7 @@
             "tcp_fast_open": false
         },
         {
-            "tag": "CF-SG-AWS",
+            "tag": "☁️CF-SG-AWS",
             "type": "vless",
             "server": "mpt.com.mm",
             "server_port": 443,
