@@ -83,10 +83,10 @@
                 "direct",
                 "\ud83d\ude80TEHRAN-404",
                 "\ud83d\ude80BERLIN-404",
-                "t.me/nkka404",
-                "Channel-404",
-                "CF-ID-GCP",
-                "CF-SG-AWS",
+                "\ud83c\udfe0t.me/nkka404",
+                "\ud83c\udfe0Channel-404",
+                "\u2601\ufe0fCF-ID-GCP",
+                "\u2601\ufe0fCF-SG-AWS",
                 "\ud83c\udded\ud83c\uddf0CF-HK",
                 "\ud83c\uddf9\ud83c\uddfcCF-TW",
                 "\ud83c\uddf9\ud83c\uddedTrue-TH",
@@ -106,12 +106,10 @@
         {
             "interval": "10m",
             "outbounds": [
-                "\ud83d\ude80TEHRAN-404",
-                "\ud83d\ude80BERLIN-404",
-                "t.me/nkka404",
-                "Channel-404",
-                "CF-ID-GCP",
-                "CF-SG-AWS",
+                "\ud83c\udfe0t.me/nkka404",
+                "\ud83c\udfe0Channel-404",
+                "\u2601\ufe0fCF-ID-GCP",
+                "\u2601\ufe0fCF-SG-AWS",
                 "\ud83c\udded\ud83c\uddf0CF-HK",
                 "\ud83c\uddf9\ud83c\uddfcCF-TW",
                 "\ud83c\uddf9\ud83c\uddedTrue-TH",
@@ -135,7 +133,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "162.159.195.173",
+            "server": "162.159.192.80",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -155,7 +153,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "162.159.195.100",
+            "server": "188.114.98.139",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -186,7 +184,7 @@
         },
         {
             "type": "hysteria2",
-            "tag": "t.me/nkka404",
+            "tag": "\ud83c\udfe0t.me/nkka404",
             "server_port": 443,
             "obfs": {
                 "type": "salamander",
@@ -217,7 +215,7 @@
         },
         {
             "type": "hysteria2",
-            "tag": "Channel-404",
+            "tag": "\ud83c\udfe0Channel-404",
             "server": "212.113.100.126",
             "server_port": 443,
             "obfs": {
@@ -233,7 +231,7 @@
             }
         },
         {
-            "tag": "CF-ID-GCP",
+            "tag": "\u2601\ufe0fCF-ID-GCP",
             "type": "vless",
             "server": "mpt.com.mm",
             "server_port": 443,
@@ -253,7 +251,7 @@
             "tcp_fast_open": false
         },
         {
-            "tag": "CF-SG-AWS",
+            "tag": "\u2601\ufe0fCF-SG-AWS",
             "type": "vless",
             "server": "mpt.com.mm",
             "server_port": 443,
