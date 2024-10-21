@@ -88,9 +88,11 @@
          "CF-ID-GCP",
          "CF-SG-AWS",
          "🇭🇰CF-HK",
-         "CF-Taiwan",
-         "🇲🇲ATOM-1(500MB)",
-         "🇲🇲ATOM-2(500MB)"
+         "🇹🇼CF-TW",
+         "🇹🇭True-TH",
+         "🇲🇲ATOM(500MB)",
+         "Japan-1🇯🇵",
+         "Japan-2🇯🇵"
        ],
        "tag": "proxy",
        "type": "selector"
@@ -103,9 +105,11 @@
          "CF-ID-GCP",
          "CF-SG-AWS",
          "🇭🇰CF-HK",
-         "CF-Taiwan",
-         "🇲🇲ATOM-1(500MB)",
-         "🇲🇲ATOM-2(500MB)"
+         "🇹🇼CF-TW",
+         "🇹🇭True-TH",
+         "🇲🇲ATOM(500MB)",
+         "Japan-1🇯🇵",
+         "Japan-2🇯🇵"
        ],
        "tag": "auto",
        "tolerance": 50,
@@ -234,7 +238,7 @@
             "tcp_fast_open": false
         },
         {
-            "tag": "🇹🇼CF-SG",
+            "tag": "🇹🇼CF-TW",
             "type": "vless",
             "server": "123.241.218.71",
             "server_port": 11957,
@@ -254,7 +258,7 @@
             "tcp_fast_open": false
         },
       {
-            "tag": "🇲🇲ATOM-1(500MB)",
+            "tag": "Japan🇯🇵",
             "type": "shadowsocks",
             "server": "188.166.246.155",
             "server_port": 22100,
@@ -262,12 +266,28 @@
             "password": "mVORFAsh6K8wkBI8nJAEEX1vdTgL4dY7tubMIZ4E6Io="
         },
       {
-            "tag": "🇲🇲ATOM-2(500MB)",
+            "tag": "🇲🇲ATOM(500MB)",
             "type": "shadowsocks",
             "server": "atom.fourzerofour.web.id",
             "server_port": 29075,
             "method": "chacha20-ietf-poly1305",
             "password": "6PxJ+8x0q18uqgR+8Nm9QUqBmbYjXF25eK8b60TxLNs="
+        }
+      {
+            "tag": "Japan-1🇯🇵",
+            "type": "shadowsocks",
+            "server": "jp1.fourzerofour.web.id",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
+        },
+      {
+            "tag": "Japan-2🇯🇵",
+            "type": "shadowsocks",
+            "server": "jp2.fourzerofour.web.id",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "amazonskr05"
         }
    ],
    "route": {
