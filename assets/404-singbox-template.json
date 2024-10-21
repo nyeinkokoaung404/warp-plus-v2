@@ -88,12 +88,9 @@
          "CF-ID-GCP",
          "CF-SG-AWS",
          "🇭🇰CF-HK",
-         "CF-Taiwan",
-         "🇯🇵Japan",
-         "🇲🇲ATOM(500MB)",
-         "Japan-1🇯🇵",
-         "Japan-2🇯🇵",
-         "🇹🇭True-TH"
+         "🇹🇼CF-TW",
+         "🇲🇲ATOM-1(500MB)",
+         "🇲🇲ATOM-2(500MB)"
        ],
        "tag": "proxy",
        "type": "selector"
@@ -101,17 +98,16 @@
      {
        "interval": "10m",
        "outbounds": [
+         "🚀TEHRAN-404",
+         "🚀BERLIN-404",
          "t.me/nkka404",
          "Channel-404",
          "CF-ID-GCP",
          "CF-SG-AWS",
          "🇭🇰CF-HK",
-         "CF-Taiwan",
-         "🇯🇵Japan",
-         "🇲🇲ATOM(500MB)",
-         "Japan-1🇯🇵",
-         "Japan-2🇯🇵",
-         "🇹🇭True-TH"
+         "🇹🇼CF-TW",
+         "🇲🇲ATOM-1(500MB)",
+         "🇲🇲ATOM-2(500MB)"
        ],
        "tag": "auto",
        "tolerance": 50,
@@ -240,7 +236,7 @@
             "tcp_fast_open": false
         },
         {
-            "tag": "CF-Taiwan",
+            "tag": "🇹🇼CF-TW",
             "type": "vless",
             "server": "123.241.218.71",
             "server_port": 11957,
@@ -260,62 +256,21 @@
             "tcp_fast_open": false
         },
       {
-      "tag" : "🇯🇵Japan",
-      "type" : "vmess",
-      "server" : "152.69.197.60",
-      "server_port" : 1069,
-      "uuid" : "ac8e26fe-8150-4b60-ae64-82fc77eba2cf",
-      "security" : "auto",
-      "alter_id" : 0,
-      "tls" : {
-        "enabled" : false
-      },
-      "transport" : {}
-    },
+            "tag": "🇲🇲ATOM-1(500MB)",
+            "type": "shadowsocks",
+            "server": "188.166.246.155",
+            "server_port": 22100,
+            "method": "chacha20-ietf-poly1305",
+            "password": "mVORFAsh6K8wkBI8nJAEEX1vdTgL4dY7tubMIZ4E6Io="
+        },
       {
-            "tag": "🇲🇲ATOM(500MB)",
+            "tag": "🇲🇲ATOM-2(500MB)",
             "type": "shadowsocks",
             "server": "atom.fourzerofour.web.id",
             "server_port": 29075,
             "method": "chacha20-ietf-poly1305",
             "password": "6PxJ+8x0q18uqgR+8Nm9QUqBmbYjXF25eK8b60TxLNs="
         }
-      {
-            "tag": "Japan-1🇯🇵",
-            "type": "shadowsocks",
-            "server": "jp1.fourzerofour.web.id",
-            "server_port": 443,
-            "method": "aes-256-cfb",
-            "password": "amazonskr05"
-        },
-      {
-            "tag": "Japan-2🇯🇵",
-            "type": "shadowsocks",
-            "server": "jp2.fourzerofour.web.id",
-            "server_port": 443,
-            "method": "aes-256-cfb",
-            "password": "amazonskr05"
-        },
-      {
-      "tag" : "🇹🇭True-TH",
-      "type" : "vmess",
-      "server" : "www.opensignal.com",
-      "server_port" : 80,
-      "uuid" : "bdd29ad9-1294-4a7c-a131-bc93089c4763",
-      "security" : "auto",
-      "alter_id" : 0,
-      "tls" : {
-        "enabled" : false
-      },
-      "transport" : {
-        "type" : "ws",
-        "path" : "/@nkka404",
-        "headers" : {
-          "Host" : "www.opensignal.com.fourzerofour.web.id"
-        },
-        "max_early_data" : 0
-      }
-    }
    ],
    "route": {
      "auto_detect_interface": true,
