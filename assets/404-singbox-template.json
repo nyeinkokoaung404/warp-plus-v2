@@ -81,7 +81,12 @@
        "outbounds": [
          "auto",
          "direct",
-         "@nkka404"
+         "🚀TEHRAN-404",
+         "🚀BERLIN-404",
+         "@nkka404",
+         "🇳🇱H2-404",
+         "🇲🇲ATOM(500MB)-404",
+         "🇯🇵JP-404"
        ],
        "tag": "proxy",
        "type": "selector"
