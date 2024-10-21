@@ -90,7 +90,8 @@
          "🇭🇰CF-HK",
          "🇹🇼CF-TW",
          "🇹🇭True-TH",
-         "🇲🇲ATOM-2(500MB)"
+         "🇲🇲ATOM(500MB)",
+         "🇯🇵Japan"
        ],
        "tag": "proxy",
        "type": "selector"
@@ -107,7 +108,8 @@
          "🇭🇰CF-HK",
          "🇹🇼CF-TW",
          "🇹🇭True-TH",
-         "🇲🇲ATOM-2(500MB)"
+         "🇲🇲ATOM(500MB)",
+         "🇯🇵Japan"
        ],
        "tag": "auto",
        "tolerance": 50,
@@ -276,13 +278,26 @@
       }
     },
       {
-            "tag": "🇲🇲ATOM-2(500MB)",
+            "tag": "🇲🇲ATOM(500MB)",
             "type": "shadowsocks",
             "server": "atom.fourzerofour.web.id",
             "server_port": 29075,
             "method": "chacha20-ietf-poly1305",
             "password": "6PxJ+8x0q18uqgR+8Nm9QUqBmbYjXF25eK8b60TxLNs="
-        }
+        },
+      {
+      "tag" : "🇯🇵Japan",
+      "type" : "vmess",
+      "server" : "152.69.197.60",
+      "server_port" : 1069,
+      "uuid" : "ac8e26fe-8150-4b60-ae64-82fc77eba2cf",
+      "security" : "auto",
+      "alter_id" : 0,
+      "tls" : {
+        "enabled" : false
+      },
+      "transport" : {}
+    }
    ],
    "route": {
      "auto_detect_interface": true,
