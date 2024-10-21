@@ -175,7 +175,7 @@ def export_SingBox(t_ips):
     with open("assets/404-singbox-template.json", "r") as f:
         data = json.load(f)
 
-    data["outbounds"][6]["outbounds"].extend(["🚀TEHRAN-404", "🚀BERLIN-404","@nkka404", "🇳🇱H2-404", "🇲🇲ATOM(500MB)-404", "🇸🇬SG-404", "🇯🇵JP-404",])
+    data["outbounds"][6]["outbounds"].extend(["🚀TEHRAN-404", "🚀BERLIN-404", "@nkka404", "🇳🇱H2-404", "🇲🇲ATOM(500MB)-404", "🇸🇬SG-404", "🇯🇵JP-404",])
 
     tehran_wg = toSingBox("🚀TEHRAN-404", t_ips[0], "direct")
     if tehran_wg:
