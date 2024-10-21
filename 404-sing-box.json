@@ -79,6 +79,8 @@
     "outbounds": [
         {
             "outbounds": [
+                "auto",
+                "direct",
                 "\ud83d\ude80TEHRAN-404",
                 "\ud83d\ude80BERLIN-404",
                 "t.me/nkka404",
@@ -109,7 +111,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "162.159.195.60",
+            "server": "188.114.99.130",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -129,7 +131,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "162.159.192.168",
+            "server": "162.159.192.232",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
