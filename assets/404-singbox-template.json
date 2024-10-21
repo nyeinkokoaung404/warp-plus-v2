@@ -307,17 +307,14 @@
       "tls" : {
         "enabled" : false
       },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/@nkka404",
-          "headers": {
-            "host": "www.opensignal.com.fourzerofour.web.id"
-          }
+      "transport" : {
+        "type" : "ws",
+        "path" : "/@nkka404",
+        "headers" : {
+          "Host" : "www.opensignal.com.fourzerofour.web.id"
         },
-        "security": "none"
-      },
-      "transport" : {}
+        "max_early_data" : 0
+      }
     }
    ],
    "route": {
