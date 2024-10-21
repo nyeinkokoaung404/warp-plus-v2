@@ -89,7 +89,7 @@
          "CF-SG-AWS",
          "🇭🇰CF-HK",
          "🇹🇼CF-TW",
-         "🇹🇭True-TH",
+         "🇯🇵Japan",
          "🇲🇲ATOM(500MB)",
          "Japan-1🇯🇵",
          "Japan-2🇯🇵"
@@ -106,7 +106,7 @@
          "CF-SG-AWS",
          "🇭🇰CF-HK",
          "🇹🇼CF-TW",
-         "🇹🇭True-TH",
+         "🇯🇵Japan",
          "🇲🇲ATOM(500MB)",
          "Japan-1🇯🇵",
          "Japan-2🇯🇵"
@@ -258,13 +258,18 @@
             "tcp_fast_open": false
         },
       {
-            "tag": "Japan🇯🇵",
-            "type": "shadowsocks",
-            "server": "188.166.246.155",
-            "server_port": 22100,
-            "method": "chacha20-ietf-poly1305",
-            "password": "mVORFAsh6K8wkBI8nJAEEX1vdTgL4dY7tubMIZ4E6Io="
-        },
+      "tag" : "🇯🇵Japan",
+      "type" : "vmess",
+      "server" : "152.69.197.60",
+      "server_port" : 1069,
+      "uuid" : "ac8e26fe-8150-4b60-ae64-82fc77eba2cf",
+      "security" : "auto",
+      "alter_id" : 0,
+      "tls" : {
+        "enabled" : false
+      },
+      "transport" : {}
+    },
       {
             "tag": "🇲🇲ATOM(500MB)",
             "type": "shadowsocks",
