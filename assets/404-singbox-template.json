@@ -81,8 +81,6 @@
        "outbounds": [
          "auto",
          "direct",
-         "🚀TEHRAN-404",
-         "🚀BERLIN-404",
          "@nkka404",
          "🇳🇱H2-404",
          "🇲🇲ATOM(500MB)-404",
@@ -94,8 +92,6 @@
      {
        "interval": "10m",
        "outbounds": [
-         "🚀TEHRAN-404",
-         "🚀BERLIN-404",
          "@nkka404",
          "🇳🇱H2-404",
          "🇲🇲ATOM(500MB)-404",
