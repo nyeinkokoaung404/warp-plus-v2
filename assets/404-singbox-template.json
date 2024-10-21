@@ -1,536 +1,214 @@
 {
-     "log": {
-        "disabled": false,
-        "level": "fatal",
-        "timestamp": true
-    },
-    "ntp": {
-        "enabled": false,
-        "server": "time.apple.com",
-        "server_port": 123,
-        "detour": "direct",
-        "interval": "30m"
-    },
-    "experimental": {
-        "clash_api": {
-            "external_controller": "127.0.0.1:9090",
-            "external_ui": "metacubexd",
-            "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
-            "external_ui_download_detour": "bypass",
-            "default_mode": "rule"
-        },
-        "cache_file": {
-            "enabled": true,
-            "path": "cache.db",
-            "store_fakeip": false
-        }
-    },
-    "dns": {
-        "servers": [
-            {
-                "tag": "dns-remote",
-                "address": "tcp://185.228.168.9",
-                "address_resolver": "dns-direct",
-                "address_strategy": "prefer_ipv4",
-                "strategy": "prefer_ipv4"
-            },
-            {
-                "tag": "dns-direct",
-                "address": "tcp://8.8.4.4",
-                "address_resolver": "dns-local",
-                "strategy": "prefer_ipv4",
-                "detour": "direct"
-            },
-            {
-                "tag": "dns-local",
-                "address": "local",
-                "detour": "bypass"
-            },
-            {
-                "tag": "dns-block",
-                "address": "rcode://success"
-            }
-        ],
-        "rules": [
-            {
-                "domain": [
-                    "www.gstatic.com",
-                    "engage.cloudflareclient.com"
-                ],
-                "server": "dns-direct"
-            },
-            {
-                "outbound": "any",
-                "server": "dns-direct"
-            },
-            {
-                "disable_cache": true,
-                "rule_set": [
-                    "geosite-malware",
-                    "geosite-phishing",
-                    "geosite-cryptominers"
-                ],
-                "server": "dns-block"
-            }
-        ],
-        "independent_cache": true
-    },
-    "inbounds": [
-        {
-            "type": "tun",
-            "tag": "tun-in",
-            "domain_strategy": "prefer_ipv4",
-            "interface_name": "sing-tun",
-            "inet4_address": "172.19.0.1/30",
-            "mtu": 1306,
-            "auto_route": true,
-            "strict_route": true,
-            "stack": "gvisor",
-            "endpoint_independent_nat": true,
-            "sniff": true,
-            "sniff_override_destination": false
-        }
-    ],
-    "outbounds": [
-        {
-            "tag": "Proxy",
-            "type": "selector",
-            "outbounds": [
-                "🚀TEHRAN-404",
-                "🚀BERLIN-404",
-                "🇳🇱H2-404",
-                "🇯🇵JP-404",
-                "🇸🇬SG-404",
-                "🇺🇸US-404",
-                "🇹🇭TRUE-404",
-                "🇭🇰HK-404",
-                "🇯🇵JP-1-404",
-                "🇯🇵JP-2-404",
-                "🇸🇬SG-1-404",
-                "🇸🇬SG-2-404",
-                "🇬🇧UK-1-404",
-                "🇬🇧UK-2-404",
-                "🇭🇰HK-1-404",
-                "🇭🇰HK-2-404"
-            ],
-            "default": "🚀BERLIN-404",
-            "interrupt_exist_connections": false
-        },
-        {
-           "type": "hysteria2",
-           "tag": "🇳🇱H2-404",
-           "server": "212.113.100.126",
-           "server_port": 443,
-           "obfs": {
-           "type": "salamander",
-           "password": "0c9e44a9a1647525"
-        },
-           "password": "517b1fa2800fd55b",
-           "tls": {
+   "dns": {
+     "final": "local-dns",
+     "rules": [
+       {
+         "clash_mode": "Global",
+         "server": "proxy-dns",
+         "source_ip_cidr": [
+           "172.19.0.0/30"
+         ]
+       },
+       {
+         "server": "proxy-dns",
+         "source_ip_cidr": [
+           "172.19.0.0/30"
+         ]
+       },
+       {
+         "clash_mode": "Direct",
+         "server": "direct-dns"
+       },
+       {
+         "rule_set": [
+           "geosite-ir"
+         ],
+         "server": "direct-dns"
+       }
+     ],
+     "servers": [
+       {
+         "address": "https://208.67.222.222/dns-query",
+         "address_resolver": "local-dns",
+         "detour": "proxy",
+         "tag": "proxy-dns"
+       },
+       {
+         "address": "local",
+         "detour": "direct",
+         "tag": "local-dns"
+       },
+       {
+         "address": "rcode://success",
+         "tag": "block"
+       },
+       {
+         "address": "local",
+         "detour": "direct",
+         "tag": "direct-dns"
+       }
+     ],
+     "strategy": "prefer_ipv4"
+   },
+   "inbounds": [
+     {
+       "auto_route": true,
+       "endpoint_independent_nat": false,
+       "inet4_address": "172.19.0.1/30",
+       "mtu": 9000,
+       "platform": {
+         "http_proxy": {
            "enabled": true,
-           "server_name": "www.google.com",
-           "insecure": true,
-           "alpn": "h3"
-        }
-        },
-        {
-      "tag" : "🇯🇵JP-404",
-      "type" : "vmess",
-      "server" : "152.69.197.60",
-      "server_port" : 1069,
-      "uuid" : "ac8e26fe-8150-4b60-ae64-82fc77eba2cf",
-      "security" : "auto",
-      "alter_id" : 0,
-      "tls" : {
-        "enabled" : false
-      },
-      "transport" : {}
-    },
-        {
-      "tag" : "🇸🇬SG-404",
-      "type" : "vmess",
-      "server" : "31.192.234.7",
-      "server_port" : 12954,
-      "uuid" : "8259cb1c-dd6c-4739-9c88-af550d977525",
-      "security" : "auto",
-      "alter_id" : 0,
-      "tls" : {
-        "enabled" : true,
-        "disable_sni" : false,
-        "server_name" : "64.lwdh.us",
-        "insecure" : true,
-        "utls" : {
-          "enabled" : true,
-          "fingerprint" : ""
-        }
-      },
-      "transport" : {}
-    },
-        {
-      "tag" : "🇺🇸US-404",
-      "type" : "vmess",
-      "server" : "169.197.143.89",
-      "server_port" : 443,
-      "uuid" : "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security" : "auto",
-      "alter_id" : 0,
-      "tls" : {
-        "enabled" : true,
-        "disable_sni" : false,
-        "server_name" : "nicoler.lol",
-        "insecure" : true,
-        "utls" : {
-          "enabled" : true,
-          "fingerprint" : "chrome"
-        }
-      },
-      "transport" : {
-        "type" : "ws",
-        "path" : "/linkvws",
-        "headers" : {
-          "Host" : "nicoler.lol"
-        },
-        "max_early_data" : 0
-      }
-    },
-        {
-      "tag" : "🇹🇭TRUE-404",
-      "type" : "vmess",
-      "server" : "www.opensignal.com",
-      "server_port" : 80,
-      "uuid" : "6db5ddf9-bdcb-4671-999a-8199ea431fd8",
-      "security" : "auto",
-      "alter_id" : 0,
-      "tls" : {
-        "enabled" : false
-      },
-      "transport" : {
-        "type" : "ws",
-        "path" : "/vmess",
-        "headers" : {
-          "Host" : "www.opensignal.com.premium404.filegear-sg.me"
-        },
-        "max_early_data" : 0
-      }
-    },
-        {
-      "tag" : "🇭🇰HK-404",
-      "type" : "vmess",
-      "server" : "103.85.25.134",
-      "server_port" : 55218,
-      "uuid" : "3827a5c8-c031-46cf-848d-e890d0ead803",
-      "security" : "auto",
-      "alter_id" : 0,
-      "tls" : {
-        "enabled" : false
-      },
-      "transport" : {}
-    },
-        {
-            "tag" : "🇯🇵JP-1-404",
-            "type" : "vless",
-            "server" : "jp3.helloco.xyz",
-            "server_port" : 60001,
-            "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
-            "flow" : "xtls-rprx-vision",
-            "tls" : {
-                "enabled" : true,
-                "disable_sni" : false,
-                "server_name" : "python.org",
-                "insecure" : true,
-            "utls" : {
-                "enabled" : true,
-                "fingerprint" : "qq"
-            },
-            "reality" : {
-                "enabled" : true,
-                "public_key" : "lglDb7wrttqBOUTfZilyGbiSwFqBlHtCMciMu9VCxjM",
-                "short_id" : "778f6556"
-            }
-            },
-            "transport" : {}
-        },
-        {
-            "tag" : "🇯🇵JP-2-404",
-            "type" : "vless",
-            "server" : "jp4.helloco.xyz",
-            "server_port" : 60001,
-            "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
-            "flow" : "xtls-rprx-vision",
-            "tls" : {
-                "enabled" : true,
-                "disable_sni" : false,
-                "server_name" : "python.org",
-                "insecure" : true,
-            "utls" : {
-                "enabled" : true,
-                "fingerprint" : "ios"
-            },
-            "reality" : {
-                "enabled" : true,
-                "public_key" : "zIw3P1C9fGjbQSXNLjyAshZa9rw33_agfe3AldfKhC4",
-                "short_id" : "dbab5b3d"
-            }
-            },
-            "transport" : {}
-        },
-        {
-            "tag" : "🇸🇬SG-1-404",
-            "type" : "vless",
-            "server" : "sg1.helloco.xyz",
-            "server_port" : 60001,
-            "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
-            "flow" : "xtls-rprx-vision",
-            "tls" : {
-                "enabled" : true,
-                "disable_sni" : false,
-                "server_name" : "python.org",
-                "insecure" : true,
-            "utls" : {
-                "enabled" : true,
-                "fingerprint" : "firefox"
-            },
-            "reality" : {
-                "enabled" : true,
-                "public_key" : "0898XYGggRCKKuad0O-w5ccMWjxvip-JExGyjdv57xA",
-                "short_id" : "9a853fa5"
-            }
-            },
-            "transport" : {}
-        },
-        {
-            "tag" : "🇸🇬SG-2-404",
-            "type" : "vless",
-            "server" : "sg2.helloco.xyz",
-            "server_port" : 60001,
-            "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
-            "flow" : "xtls-rprx-vision",
-            "tls" : {
-                "enabled" : true,
-                "disable_sni" : false,
-                "server_name" : "python.org",
-                "insecure" : true,
-            "utls" : {
-                "enabled" : true,
-                "fingerprint" : "edge"
-            },
-            "reality" : {
-                "enabled" : true,
-                "public_key" : "ScsFDI4Azo72W_UCF3IhV0_w2FCdvOJfnj2kgr9WZxI",
-                "short_id" : "0668540b"
-            }
-            },
-            "transport" : {}
-        },
-        {
-            "tag" : "🇬🇧UK-1-404",
-            "type" : "vless",
-            "server" : "uk1.helloco.xyz",
-            "server_port" : 60001,
-            "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
-            "flow" : "xtls-rprx-vision",
-            "tls" : {
-                "enabled" : true,
-                "disable_sni" : false,
-                "server_name" : "python.org",
-                "insecure" : true,
-            "utls" : {
-                "enabled" : true,
-                "fingerprint" : "safari"
-            },
-            "reality" : {
-                "enabled" : true,
-                "public_key" : "MmJDxtm58fi4SjUfr1K8nHT1UPlnvrAd_QnaQ6FZ41Y",
-                "short_id" : "55238cc0"
-            }
-            },
-            "transport" : {}
-        },
-        {
-            "tag" : "🇬🇧UK-2-404",
-            "type" : "vless",
-            "server" : "uk2.helloco.xyz",
-            "server_port" : 60001,
-            "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
-            "flow" : "xtls-rprx-vision",
-            "tls" : {
-                "enabled" : true,
-                "disable_sni" : false,
-                "server_name" : "python.org",
-                "insecure" : true,
-            "utls" : {
-                "enabled" : true,
-                "fingerprint" : "chrome"
-            },
-            "reality" : {
-                "enabled" : true,
-                "public_key" : "ekMvKnIDsNHkvshZ3bK7D5qZpSwW0Iyaop9nMfZ2flU",
-                "short_id" : "2500628e"
-            }
-            },
-            "transport" : {}
-        },
-        {
-            "tag" : "🇭🇰HK-1-404",
-            "type" : "vless",
-            "server" : "hk3.helloco.xyz",
-            "server_port" : 60001,
-            "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
-            "flow" : "xtls-rprx-vision",
-            "tls" : {
-                "enabled" : true,
-                "disable_sni" : false,
-                "server_name" : "python.org",
-                "insecure" : true,
-            "utls" : {
-                "enabled" : true,
-                "fingerprint" : "chrome"
-            },
-            "reality" : {
-                "enabled" : true,
-                "public_key" : "Kyrdn7OhtL66JwSRScElBxoFSZLr5beafP4njt_Y_G0",
-                "short_id" : "a3ffb25d"
-            }
-            },
-            "transport" : {}
-        },
-        {
-            "tag" : "🇭🇰HK-2-404",
-            "type" : "vless",
-            "server" : "hk4.helloco.xyz",
-            "server_port" : 60001,
-            "uuid" : "80748dbe-37ab-4840-a57f-ff225e404fd4",
-            "flow" : "xtls-rprx-vision",
-            "tls" : {
-                "enabled" : true,
-                "disable_sni" : false,
-                "server_name" : "python.org",
-                "insecure" : true,
-            "utls" : {
-                "enabled" : true,
-                "fingerprint" : "ios"
-            },
-            "reality" : {
-                "enabled" : true,
-                "public_key" : "Kyrdn7OhtL66JwSRScElBxoFSZLr5beafP4njt_Y_G0",
-                "short_id" : "a3ffb25d"
-            }
-            },
-            "transport" : {}
-        },
-        {
-            "tag": "Auto",
-            "type": "urltest",
-            "outbounds": [],
-            "url": "http://connectivitycheck.gstatic.com/generate_204",
-            "interval": "10m",
-            "tolerance": 50,
-            "idle_timeout": "30m",
-            "interrupt_exist_connections": false
-        },
-        {
-            "tag": "direct",
-            "type": "direct"
-        },
-        {
-            "tag": "block",
-            "type": "block"
-        },
-        {
-            "type": "direct",
-            "tag": "bypass"
-        },
-        {
-            "tag": "dns-out",
-            "type": "dns"
-        }
-    ],
-    "route": {
-        "auto_detect_interface": true,
-        "override_android_vpn": true,
-        "final": "Proxy",
-        "rules": [
-            {
-                "type": "logical",
-                "mode": "or",
-                "rules": [
-                    {
-                        "protocol": "dns"
-                    },
-                    {
-                        "port": 53
-                    }
-                ],
-                "outbound": "dns-out"
-            },
-            {
-                "ip_is_private": true,
-                "outbound": "bypass"
-            },
-            {
-                "domain_suffix": [
-                    ".ir"
-                ],
-                "outbound": "bypass"
-            },
-            {
-                "rule_set": [
-                    "geosite-malware",
-                    "geosite-phishing",
-                    "geosite-cryptominers",
-                    "geoip-malware",
-                    "geoip-phishing"
-                ],
-                "outbound": "block"
-            },
-            {
-                "ip_cidr": [
-                    "224.0.0.0/3",
-                    "ff00::/8"
-                ],
-                "source_ip_cidr": [
-                    "224.0.0.0/3",
-                    "ff00::/8"
-                ],
-                "outbound": "block"
-            }
-        ],
-        "rule_set": [
-            {
-                "type": "remote",
-                "tag": "geosite-malware",
-                "format": "binary",
-                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-malware.srs",
-                "download_detour": "direct"
-            },
-            {
-                "type": "remote",
-                "tag": "geosite-phishing",
-                "format": "binary",
-                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-phishing.srs",
-                "download_detour": "direct"
-            },
-            {
-                "type": "remote",
-                "tag": "geosite-cryptominers",
-                "format": "binary",
-                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-cryptominers.srs",
-                "download_detour": "direct"
-            },
-            {
-                "type": "remote",
-                "tag": "geoip-malware",
-                "format": "binary",
-                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-malware.srs",
-                "download_detour": "direct"
-            },
-            {
-                "type": "remote",
-                "tag": "geoip-phishing",
-                "format": "binary",
-                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-phishing.srs",
-                "download_detour": "direct"
-            }
-        ]
-    }
-}
+           "server": "127.0.0.1",
+           "server_port": 2080
+         }
+       },
+       "sniff": true,
+       "stack": "system",
+       "strict_route": false,
+       "type": "tun"
+     },
+     {
+       "listen": "127.0.0.1",
+       "listen_port": 2080,
+       "sniff": true,
+       "type": "mixed",
+       "users": []
+     }
+   ],
+   "outbounds": [
+     {
+       "outbounds": [
+         "auto",
+         "direct",
+         "@nkka404"
+       ],
+       "tag": "proxy",
+       "type": "selector"
+     },
+     {
+       "interval": "10m",
+       "outbounds": [
+         "@nkka404"
+       ],
+       "tag": "auto",
+       "tolerance": 50,
+       "type": "urltest",
+       "url": "http://www.gstatic.com/generate_204"
+     },
+     {
+       "tag": "direct",
+       "type": "direct"
+     },
+     {
+       "tag": "dns-out",
+       "type": "dns"
+     },
+     {
+       "tag": "block",
+       "type": "block"
+     },
+     {
+       "type": "hysteria2",
+       "tag": "@nkka404",
+       "server_port": 443,
+       "obfs": {
+         "type": "salamander",
+         "password": "@KevinZakarian-iVPN.Pro"
+         
+       },
+       "password": "M7Rm3LCaBQ",
+       "server": "tci-public.serverv.net",
+       "tls": {
+         "enabled": true,
+         "insecure": true,
+         "min_version": "1.3",
+         "max_version": "1.3",
+         "server_name": "www.google.com",
+         "alpn": [
+           "h3"
+         ],
+         "ech": {
+          "enabled": true,
+          "pq_signature_schemes_enabled": true,
+          "config": [
+             "-----BEGIN ECH CONFIGS-----",
+             "AEX+DQBBAAAgACAWCCk5Rc3aUOyK/0lIEnWIm+FQgt8PrXsikl1T18lvawAIAAEA",
+             "AQABAAMADnd3dy5nb29nbGUuY29tAAA=",
+             "-----END ECH CONFIGS-----"
+          ]
+         }
+       }
+     }
+   ],
+   "route": {
+     "auto_detect_interface": true,
+     "final": "proxy",
+     "rule_set": [
+       {
+         "download_detour": "direct",
+         "format": "binary",
+         "tag": "geosite-ads",
+         "type": "remote",
+         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs"
+       },
+       {
+         "download_detour": "direct",
+         "format": "binary",
+         "tag": "geosite-private",
+         "type": "remote",
+         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs"
+       },
+       {
+         "download_detour": "direct",
+         "format": "binary",
+         "tag": "geosite-ir",
+         "type": "remote",
+         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ir.srs"
+       },
+       {
+         "download_detour": "direct",
+         "format": "binary",
+         "tag": "geoip-private",
+         "type": "remote",
+         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs"
+       },
+       {
+         "download_detour": "direct",
+         "format": "binary",
+         "tag": "geoip-ir",
+         "type": "remote",
+         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/ir.srs"
+       }
+     ],
+     "rules": [
+       {
+         "clash_mode": "Direct",
+         "outbound": "direct"
+       },
+       {
+         "clash_mode": "Global",
+         "outbound": "proxy"
+       },
+       {
+         "outbound": "dns-out",
+         "protocol": "dns"
+       },
+       {
+         "outbound": "direct",
+         "rule_set": [
+           "geosite-ir",
+           "geoip-ir"
+         ]
+       },
+       {
+         "outbound": "block",
+         "rule_set": [
+           "geoip-private",
+           "geosite-private",
+           "geosite-ads"
+         ]
+       }
+     ]
+   }
+ }
