@@ -85,6 +85,8 @@
          "🚀BERLIN-404",
          "t.me/nkka404",
          "Channel-404",
+         "CF-ID-GCP",
+         "CF-SG-AWS",
          "🇲🇲ATOM-1(500MB)",
          "🇲🇲ATOM-2(500MB)"
        ],
@@ -98,6 +100,8 @@
          "🚀BERLIN-404",
          "t.me/nkka404",
          "Channel-404",
+         "CF-ID-GCP",
+         "CF-SG-AWS",
          "🇲🇲ATOM-1(500MB)",
          "🇲🇲ATOM-2(500MB)"
        ],
@@ -166,6 +170,46 @@
                 "insecure": true,
                 "alpn": "h3"
             }
+        },
+      {
+            "tag": "CF-ID-GCP",
+            "type": "vless",
+            "server": "mpt.com.mm",
+            "server_port": 443,
+            "uuid": "f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44",
+            "transport": {
+                "path": "/vlesscf",
+                "type": "ws",
+                "headers": {
+                    "Host": "id1.putrivpn.us.kg"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "id1.putrivpn.us.kg",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "tag": "CF-SG-AWS",
+            "type": "vless",
+            "server": "mpt.com.mm",
+            "server_port": 443,
+            "uuid": "f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44",
+            "transport": {
+                "path": "/vlesscf",
+                "type": "ws",
+                "headers": {
+                    "Host": "sg2.putrivpn.us.kg"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sg2.putrivpn.us.kg",
+                "insecure": true
+            },
+            "tcp_fast_open": false
         },
       {
             "tag": "🇲🇲ATOM-1(500MB)",
