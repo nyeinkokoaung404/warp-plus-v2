@@ -88,7 +88,7 @@
          "CF-ID-GCP",
          "CF-SG-AWS",
          "🇭🇰CF-HK",
-         "🇹🇼CF-TW",
+         "CF-Taiwan",
          "🇯🇵Japan",
          "🇲🇲ATOM(500MB)",
          "Japan-1🇯🇵",
@@ -101,14 +101,12 @@
      {
        "interval": "10m",
        "outbounds": [
-         "🚀TEHRAN-404",
-         "🚀BERLIN-404",
          "t.me/nkka404",
          "Channel-404",
          "CF-ID-GCP",
          "CF-SG-AWS",
          "🇭🇰CF-HK",
-         "🇹🇼CF-TW",
+         "CF-Taiwan",
          "🇯🇵Japan",
          "🇲🇲ATOM(500MB)",
          "Japan-1🇯🇵",
@@ -242,7 +240,7 @@
             "tcp_fast_open": false
         },
         {
-            "tag": "🇹🇼CF-TW",
+            "tag": "CF-Taiwan",
             "type": "vless",
             "server": "123.241.218.71",
             "server_port": 11957,
