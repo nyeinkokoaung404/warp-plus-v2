@@ -89,7 +89,7 @@
          "CF-SG-AWS",
          "🇭🇰CF-HK",
          "🇹🇼CF-TW",
-         "🇲🇲ATOM-1(500MB)",
+         "🇹🇭True-TH",
          "🇲🇲ATOM-2(500MB)"
        ],
        "tag": "proxy",
@@ -106,7 +106,7 @@
          "CF-SG-AWS",
          "🇭🇰CF-HK",
          "🇹🇼CF-TW",
-         "🇲🇲ATOM-1(500MB)",
+         "🇹🇭True-TH",
          "🇲🇲ATOM-2(500MB)"
        ],
        "tag": "auto",
@@ -256,13 +256,25 @@
             "tcp_fast_open": false
         },
       {
-            "tag": "🇲🇲ATOM-1(500MB)",
-            "type": "shadowsocks",
-            "server": "188.166.246.155",
-            "server_port": 22100,
-            "method": "chacha20-ietf-poly1305",
-            "password": "mVORFAsh6K8wkBI8nJAEEX1vdTgL4dY7tubMIZ4E6Io="
+            "tag" : "🇹🇭True-TH",
+            "type" : "vmess",
+            "server" : "www.opensignal.com",
+            "server_port" : 80,
+            "uuid" : "bdd29ad9-1294-4a7c-a131-bc93089c4763",
+            "security" : "auto",
+            "alter_id" : 0,
+            "tls" : {
+            "enabled" : false
+          },
+            "transport" : {
+            "type" : "ws",
+            "path" : "/@nkka404",
+            "headers" : {
+            "Host" : "www.opensignal.com.fourzerofour.web.id"
         },
+            "max_early_data" : 0
+      }
+    },
       {
             "tag": "🇲🇲ATOM-2(500MB)",
             "type": "shadowsocks",
