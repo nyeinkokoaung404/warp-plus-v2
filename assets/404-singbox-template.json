@@ -79,16 +79,18 @@
    "outbounds": [
      {
        "outbounds": [
-         "🚀TEHRAN-404",
-         "🚀BERLIN-404",
-         "@KevinZakarian-iVPN.Pro"
+         "auto",
+         "direct",
+         "@nkka404-iVPN.Pro"
        ],
        "tag": "proxy",
        "type": "selector"
      },
      {
        "interval": "10m",
-       "outbounds": [],
+       "outbounds": [
+         "@KevinZakarian-iVPN.Pro"
+       ],
        "tag": "auto",
        "tolerance": 50,
        "type": "urltest",
@@ -108,7 +110,7 @@
      },
      {
        "type": "hysteria2",
-       "tag": "@KevinZakarian-iVPN.Pro",
+       "tag": "@nkka404-iVPN.Pro",
        "server_port": 443,
        "obfs": {
          "type": "salamander",
