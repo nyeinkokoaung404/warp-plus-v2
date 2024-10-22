@@ -125,7 +125,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "188.114.99.200",
+            "server": "162.159.192.142",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -145,7 +145,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "188.114.96.140",
+            "server": "188.114.99.48",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -248,7 +248,7 @@
             "server": "atom.fourzerofour.web.id",
             "server_port": 29075,
             "method": "chacha20-ietf-poly1305",
-            "password": "6PxJ+8x0q18uqgR+8Nm9QUqBmbYjXF25eK8b60TxLNs="
+            "password": "CrdMaLo=YaungSarTatKg=KMKL"
         },
         {
             "tag": "\ud83c\uddef\ud83c\uddf5Japan",
