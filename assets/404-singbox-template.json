@@ -91,14 +91,17 @@
          "🇹🇼CF-TW",
          "🇹🇭True-TH",
          "🇲🇲ATOM(500MB)",
+         "ATOM(500MB)🇲🇲",
          "🇯🇵Japan",
+         "Japan🇯🇵",
          "🇭🇰HK",
          "🇮🇪IE",
          "🇵🇱Poland",
          "🇺🇸United+States",
          "🇬🇧GB",
          "🇩🇪Germany",
-         "🇫🇷France"
+         "🇫🇷France",
+         "🇧🇭BH"
        ],
        "tag": "proxy",
        "type": "selector"
@@ -114,14 +117,17 @@
          "🇹🇼CF-TW",
          "🇹🇭True-TH",
          "🇲🇲ATOM(500MB)",
+         "ATOM(500MB)🇲🇲",
          "🇯🇵Japan",
+         "Japan🇯🇵",
          "🇭🇰HK",
          "🇮🇪IE",
          "🇵🇱Poland",
          "🇺🇸United+States",
          "🇬🇧GB",
          "🇩🇪Germany",
-         "🇫🇷France"
+         "🇫🇷France",
+         "🇧🇭BH"
        ],
        "tag": "auto",
        "tolerance": 50,
@@ -298,6 +304,14 @@
             "password": "9Vd7bQc50s773XQE01G+L2726dvm0Cuq150mxtBgkKc="
         },
       {
+            "tag": "ATOM(500MB)🇲🇲",
+            "type": "shadowsocks",
+            "server": "188.166.246.155",
+            "server_port": 22100,
+            "method": "chacha20-ietf-poly1305",
+            "password": "mVORFAsh6K8wkBI8nJAEEX1vdTgL4dY7tubMIZ4E6Io="
+        },
+      {
       "tag" : "🇯🇵Japan",
       "type" : "vmess",
       "server" : "jp.fourzerofour.web.id",
@@ -310,6 +324,14 @@
       },
       "transport" : {}
     },
+      {
+            "tag": "Japan🇯🇵",
+            "type": "shadowsocks",
+            "server": "sg.premium404.web.id",
+            "server_port": 25056,
+            "method": "chacha20-ietf-poly1305",
+            "password": "1TB1N/FO5QA4NoIrAT8IFmf0x3gynq3ZzCIhctObHoY="
+        },
       {
       "tag" : "🇭🇰HK",
       "type" : "vmess",
@@ -370,6 +392,14 @@
             "server_port": 8008,
             "method": "aes-256-gcm",
             "password": "XKFKl2rULjIp74"
+        },
+      {
+            "tag": "🇧🇭BH",
+            "type": "shadowsocks",
+            "server": "series-a2-me.varzesh360.co",
+            "server_port": 8008,
+            "method": "chacha20-ietf-poly1305",
+            "password": "Bog0ELmMM9DSxDdQ"
         }
    ],
    "route": {
