@@ -293,7 +293,7 @@
             "tag": "🇲🇲ATOM(500MB)",
             "type": "shadowsocks",
             "server": "atom.fourzerofour.web.id",
-            "server_port": 29075,
+            "server_port": 13771,
             "method": "chacha20-ietf-poly1305",
             "password": "9Vd7bQc50s773XQE01G+L2726dvm0Cuq150mxtBgkKc="
         },
