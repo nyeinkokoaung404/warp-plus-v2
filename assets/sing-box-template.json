@@ -86,8 +86,10 @@
          "🏠t.me/nkka404",
          "🏠Channel-404",
          "🇹🇭True-TH",
+         "🇹🇭AIS-TH",
          "🇲🇲ATOM(500MB)",
          "🇯🇵Japan",
+         "Japan🇯🇵",
          "🇭🇰HK",
          "🇮🇪IE",
          "🇵🇱Poland",
@@ -105,8 +107,10 @@
          "🏠t.me/nkka404",
          "🏠Channel-404",
          "🇹🇭True-TH",
+         "🇹🇭AIS-TH",
          "🇲🇲ATOM(500MB)",
          "🇯🇵Japan",
+         "Japan🇯🇵",
          "🇭🇰HK",
          "🇮🇪IE",
          "🇵🇱Poland",
@@ -202,6 +206,26 @@
       }
     },
       {
+            "tag" : "🇹🇭AIS-TH",
+            "type" : "vmess",
+            "server" : "www.opensignal.com",
+            "server_port" : 80,
+            "uuid" : "bdd29ad9-1294-4a7c-a131-bc93089c4763",
+            "security" : "auto",
+            "alter_id" : 0,
+            "tls" : {
+            "enabled" : false
+          },
+            "transport" : {
+            "type" : "ws",
+            "path" : "/@nkka404",
+            "headers" : {
+            "Host" : "www.opensignal.com.fourzerofour.web.id"
+        },
+            "max_early_data" : 0
+      }
+    },
+      {
             "tag": "🇲🇲ATOM(500MB)",
             "type": "shadowsocks",
             "server": "atom.fourzerofour.web.id",
@@ -222,6 +246,14 @@
       },
       "transport" : {}
     },
+      {
+            "tag": "Japan🇯🇵",
+            "type": "shadowsocks",
+            "server": "sg.premium404.web.id",
+            "server_port": 25056,
+            "method": "chacha20-ietf-poly1305",
+            "password": "1TB1N/FO5QA4NoIrAT8IFmf0x3gynq3ZzCIhctObHoY="
+        },
       {
       "tag" : "🇭🇰HK",
       "type" : "vmess",
