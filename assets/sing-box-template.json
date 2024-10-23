@@ -208,8 +208,8 @@
       {
             "tag" : "🇹🇭AIS-TH",
             "type" : "vmess",
-            "server" : "www.opensignal.com",
-            "server_port" : 80,
+            "server" : "atom.fourzerofour.web.id",
+            "server_port" : 30065,
             "uuid" : "bdd29ad9-1294-4a7c-a131-bc93089c4763",
             "security" : "auto",
             "alter_id" : 0,
@@ -220,7 +220,7 @@
             "type" : "ws",
             "path" : "/@nkka404",
             "headers" : {
-            "Host" : "www.opensignal.com.fourzerofour.web.id"
+            "Host" : "auth.speedtest.net"
         },
             "max_early_data" : 0
       }
