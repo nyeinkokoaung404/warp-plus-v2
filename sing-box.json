@@ -86,8 +86,10 @@
                 "\ud83c\udfe0t.me/nkka404",
                 "\ud83c\udfe0Channel-404",
                 "\ud83c\uddf9\ud83c\uddedTrue-TH",
+                "\ud83c\uddf9\ud83c\uddedAIS-TH",
                 "\ud83c\uddf2\ud83c\uddf2ATOM(500MB)",
                 "\ud83c\uddef\ud83c\uddf5Japan",
+                "Japan\ud83c\uddef\ud83c\uddf5",
                 "\ud83c\udded\ud83c\uddf0HK",
                 "\ud83c\uddee\ud83c\uddeaIE",
                 "\ud83c\uddf5\ud83c\uddf1Poland",
@@ -105,8 +107,10 @@
                 "\ud83c\udfe0t.me/nkka404",
                 "\ud83c\udfe0Channel-404",
                 "\ud83c\uddf9\ud83c\uddedTrue-TH",
+                "\ud83c\uddf9\ud83c\uddedAIS-TH",
                 "\ud83c\uddf2\ud83c\uddf2ATOM(500MB)",
                 "\ud83c\uddef\ud83c\uddf5Japan",
+                "Japan\ud83c\uddef\ud83c\uddf5",
                 "\ud83c\udded\ud83c\uddf0HK",
                 "\ud83c\uddee\ud83c\uddeaIE",
                 "\ud83c\uddf5\ud83c\uddf1Poland",
@@ -125,7 +129,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "188.114.98.234",
+            "server": "188.114.97.44",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -145,7 +149,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "188.114.99.37",
+            "server": "188.114.99.110",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -243,6 +247,26 @@
             }
         },
         {
+            "tag": "\ud83c\uddf9\ud83c\uddedAIS-TH",
+            "type": "vmess",
+            "server": "atom.fourzerofour.web.id",
+            "server_port": 30065,
+            "uuid": "bdd29ad9-1294-4a7c-a131-bc93089c4763",
+            "security": "auto",
+            "alter_id": 0,
+            "tls": {
+                "enabled": false
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/@nkka404",
+                "headers": {
+                    "Host": "auth.speedtest.net"
+                },
+                "max_early_data": 0
+            }
+        },
+        {
             "tag": "\ud83c\uddf2\ud83c\uddf2ATOM(500MB)",
             "type": "shadowsocks",
             "server": "atom.fourzerofour.web.id",
@@ -262,6 +286,14 @@
                 "enabled": false
             },
             "transport": {}
+        },
+        {
+            "tag": "Japan\ud83c\uddef\ud83c\uddf5",
+            "type": "shadowsocks",
+            "server": "sg.premium404.web.id",
+            "server_port": 25056,
+            "method": "chacha20-ietf-poly1305",
+            "password": "1TB1N/FO5QA4NoIrAT8IFmf0x3gynq3ZzCIhctObHoY="
         },
         {
             "tag": "\ud83c\udded\ud83c\uddf0HK",
