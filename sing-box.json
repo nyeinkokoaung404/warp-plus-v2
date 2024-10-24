@@ -129,7 +129,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "188.114.97.102",
+            "server": "162.159.195.83",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -149,7 +149,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "188.114.99.71",
+            "server": "162.159.195.25",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -239,7 +239,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/@nkka404",
+                "path": "/",
                 "headers": {
                     "Host": "www.opensignal.com.fourzerofour.web.id"
                 },
@@ -259,9 +259,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/@nkka404",
+                "path": "/",
                 "headers": {
-                    "Host": "auth.speedtest.net"
+                    "Host": "www.speedtest.net"
                 },
                 "max_early_data": 0
             }
