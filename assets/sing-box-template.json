@@ -220,7 +220,7 @@
             "type" : "ws",
             "path" : "/@nkka404",
             "headers" : {
-            "Host" : "auth.speedtest.net"
+            "Host" : "www.speedtest.net"
         },
             "max_early_data" : 0
       }
