@@ -87,6 +87,7 @@
          "🏠Channel-404",
          "☁️CF-ID-GCP",
          "☁️CF-SG-AWS",
+         "🇳🇱Tuic",
          "🇭🇰CF-HK",
          "🇹🇼CF-TW",
          "🇹🇭True-TH",
@@ -114,6 +115,7 @@
          "🏠Channel-404",
          "☁️CF-ID-GCP",
          "☁️CF-SG-AWS",
+         "🇳🇱Tuic",
          "🇭🇰CF-HK",
          "🇹🇼CF-TW",
          "🇹🇭True-TH",
@@ -237,6 +239,26 @@
             },
             "tcp_fast_open": false
         },
+      {
+      "type": "tuic",
+      "tag": "🇳🇱Tuic",
+      "server": "77.221.158.52",
+      "server_port": 8922,
+      "uuid": "2f2dada7-b8af-49e7-a26e-d2d592c82846",
+      "password": "734da957528baa43",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
       {
             "tag": "🇭🇰CF-HK",
             "type": "vless",
