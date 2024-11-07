@@ -85,15 +85,14 @@
          "🚀BERLIN-404",
          "🏠t.me/nkka404",
          "🏠Channel-404",
-         "☁️CF-ID-GCP",
-         "☁️CF-SG-AWS",
+         "🇹🇼Taiwan-H2",
+         "🇩🇪Tuic",
          "🇳🇱Tuic",
          "🇭🇰CF-HK",
          "🇹🇼CF-TW",
          "🇹🇭True-TH",
          "🇹🇭Thailand",
          "🇲🇲ATOM(500MB)",
-         "ATOM(500MB)🇲🇲",
          "🇯🇵Japan",
          "Japan🇯🇵",
          "🇭🇰HK",
@@ -113,15 +112,14 @@
        "outbounds": [
          "🏠t.me/nkka404",
          "🏠Channel-404",
-         "☁️CF-ID-GCP",
-         "☁️CF-SG-AWS",
+         "🇹🇼Taiwan-H2",
+         "🇩🇪Tuic",
          "🇳🇱Tuic",
          "🇭🇰CF-HK",
          "🇹🇼CF-TW",
          "🇹🇭True-TH",
          "🇹🇭Thailand",
          "🇲🇲ATOM(500MB)",
-         "ATOM(500MB)🇲🇲",
          "🇯🇵Japan",
          "Japan🇯🇵",
          "🇭🇰HK",
@@ -200,45 +198,38 @@
             }
         },
       {
-            "tag": "☁️CF-ID-GCP",
-            "type": "vless",
-            "server": "mpt.com.mm",
-            "server_port": 443,
-            "uuid": "f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44",
-            "transport": {
-                "path": "/vlesscf",
-                "type": "ws",
-                "headers": {
-                    "Host": "id1.putrivpn.us.kg"
-                }
-            },
+            "type": "hysteria2",
+            "tag": "🇹🇼Taiwan-H2",
+            "server": "83.147.13.176",
+            "server_port": 11402,
+            "password": "5c397f7b-3d06-48cc-9147-218109e23a24",
             "tls": {
                 "enabled": true,
-                "server_name": "id1.putrivpn.us.kg",
-                "insecure": true
-            },
-            "tcp_fast_open": false
+                "server_name": "vkvd127.mycdn.me",
+                "insecure": true,
+                "alpn": "h3"
+            }
         },
         {
-            "tag": "☁️CF-SG-AWS",
-            "type": "vless",
-            "server": "mpt.com.mm",
-            "server_port": 443,
-            "uuid": "f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44",
-            "transport": {
-                "path": "/vlesscf",
-                "type": "ws",
-                "headers": {
-                    "Host": "sg2.putrivpn.us.kg"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sg2.putrivpn.us.kg",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
+      "type": "tuic",
+      "tag": "🇩🇪Tuic",
+      "server": "77.91.77.87",
+      "server_port": 38382,
+      "uuid": "2999e665-fa4e-498f-8417-4ab567010ed6",
+      "password": "aa69e32eae500e1c",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
       {
       "type": "tuic",
       "tag": "🇳🇱Tuic",
@@ -334,14 +325,6 @@
             "server_port": 13771,
             "method": "chacha20-ietf-poly1305",
             "password": "9Vd7bQc50s773XQE01G+L2726dvm0Cuq150mxtBgkKc="
-        },
-      {
-            "tag": "ATOM(500MB)🇲🇲",
-            "type": "shadowsocks",
-            "server": "188.166.246.155",
-            "server_port": 22100,
-            "method": "chacha20-ietf-poly1305",
-            "password": "mVORFAsh6K8wkBI8nJAEEX1vdTgL4dY7tubMIZ4E6Io="
         },
       {
       "tag" : "🇯🇵Japan",
