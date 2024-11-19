@@ -149,8 +149,8 @@
      {
             "tag": "🏠t.me/nkka404",
             "type": "wireguard",
-            "server": "wavemoney.com.mm",
-            "server_port": 880,
+            "server": "engage.cloudflareclient.com",
+            "server_port": 2408,
             "local_address": [
                 "172.16.0.2/32",
                 "2606:4700:110:8735:bb29:91bc:1c82:aa73/128"
@@ -168,8 +168,8 @@
         {
             "tag": "🏠t.me/premium_channel_404",
             "type": "wireguard",
-            "server": "mpt.com.mm",
-            "server_port": 854,
+            "server": "engage.cloudflareclient.com",
+            "server_port": 2408,
             "local_address": [
                 "172.16.0.2/32",
                 "2606:4700:110:8735:bb29:91bc:1c82:aa73/128"
