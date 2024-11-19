@@ -139,7 +139,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "188.114.99.233",
+            "server": "188.114.96.224",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -159,7 +159,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "188.114.99.212",
+            "server": "188.114.96.151",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -191,7 +191,7 @@
         {
             "tag": "\ud83c\udfe0t.me/nkka404",
             "type": "wireguard",
-            "server": "162.159.192.79",
+            "server": "wavemoney.com.mm",
             "server_port": 880,
             "local_address": [
                 "172.16.0.2/32",
@@ -210,7 +210,7 @@
         {
             "tag": "\ud83c\udfe0t.me/premium_channel_404",
             "type": "wireguard",
-            "server": "162.159.195.169",
+            "server": "mpt.com.mm",
             "server_port": 854,
             "local_address": [
                 "172.16.0.2/32",
