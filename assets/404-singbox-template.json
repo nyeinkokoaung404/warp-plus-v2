@@ -85,21 +85,23 @@
          "🚀BERLIN-404",
          "🏠t.me/nkka404",
          "🏠Channel-404",
-         "🇭🇰CF-HK",
-         "🇹🇼CF-TW",
          "🇹🇭True-TH",
          "🇹🇭Thailand",
          "🇲🇲ATOM(500MB)",
          "🇯🇵Japan",
          "Japan🇯🇵",
          "🇭🇰HK",
-         "🇮🇪IE",
-         "🇵🇱Poland",
+         "🇮🇪IE_1",
+         "🇮🇪IE_2",
+         "🇵🇱Poland_1",
+         "🇵🇱Poland_2",
          "🇺🇸United+States",
-         "🇬🇧GB",
+         "🇬🇧GB_1",
+         "🇬🇧GB_2",
          "🇩🇪Germany",
-         "🇫🇷France",
-         "🇧🇭BH"
+         "🇫🇷France_1",
+         "🇫🇷France_2",
+         "🇧🇭Bahrain"
        ],
        "tag": "proxy",
        "type": "selector"
@@ -109,21 +111,23 @@
        "outbounds": [
          "🏠t.me/nkka404",
          "🏠Channel-404",
-         "🇭🇰CF-HK",
-         "🇹🇼CF-TW",
          "🇹🇭True-TH",
          "🇹🇭Thailand",
          "🇲🇲ATOM(500MB)",
          "🇯🇵Japan",
          "Japan🇯🇵",
          "🇭🇰HK",
-         "🇮🇪IE",
-         "🇵🇱Poland",
+         "🇮🇪IE_1",
+         "🇮🇪IE_2",
+         "🇵🇱Poland_1",
+         "🇵🇱Poland_2",
          "🇺🇸United+States",
-         "🇬🇧GB",
+         "🇬🇧GB_1",
+         "🇬🇧GB_2",
          "🇩🇪Germany",
-         "🇫🇷France",
-         "🇧🇭BH"
+         "🇫🇷France_1",
+         "🇫🇷France_2",
+         "🇧🇭Bahrain"
        ],
        "tag": "auto",
        "tolerance": 50,
@@ -192,46 +196,6 @@
             }
         },
       {
-            "tag": "🇭🇰CF-HK",
-            "type": "vless",
-            "server": "112.120.127.246",
-            "server_port": 119,
-            "uuid": "f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44",
-            "transport": {
-                "path": "/vlesscf",
-                "type": "ws",
-                "headers": {
-                    "Host": "id1.putrivpn.us.kg"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "id1.putrivpn.us.kg",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "tag": "🇹🇼CF-TW",
-            "type": "vless",
-            "server": "123.241.218.71",
-            "server_port": 11957,
-            "uuid": "f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44",
-            "transport": {
-                "path": "/vlesscf",
-                "type": "ws",
-                "headers": {
-                    "Host": "sg2.putrivpn.us.kg"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sg2.putrivpn.us.kg",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-      {
             "tag" : "🇹🇭True-TH",
             "type" : "vmess",
             "server" : "www.opensignal.com",
@@ -244,7 +208,7 @@
           },
             "transport" : {
             "type" : "ws",
-            "path" : "/@nkka404",
+            "path" : "/vmess",
             "headers" : {
             "Host" : "www.opensignal.com.fourzerofour.web.id"
         },
@@ -302,7 +266,15 @@
       "transport" : {}
     },
       {
-            "tag": "🇮🇪IE",
+            "tag": "🇮🇪IE_1",
+            "type": "shadowsocks",
+            "server": "series-a2-mec.varzesh360.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "u17T3BvpYaaiuW2c"
+        },
+      {
+            "tag": "🇮🇪IE_2",
             "type": "shadowsocks",
             "server": "series-a2-mec.samanehha.co",
             "server_port": 443,
@@ -310,12 +282,20 @@
             "password": "u17T3BvpYaaiuW2c"
         },
       {
-            "tag": "🇵🇱Poland",
+            "tag": "🇵🇱Poland_1",
             "type": "shadowsocks",
-            "server": "pl.fourzerofour.web.id",
-            "server_port": 2375,
+            "server": "54.36.174.181",
+            "server_port": 7001,
             "method": "aes-256-gcm",
-            "password": "faBAoD54k87UJG7"
+            "password": "RexnBgU7EV5ADxG"
+        },
+      {
+            "tag": "🇵🇱Poland_2",
+            "type": "shadowsocks",
+            "server": "54.36.174.181",
+            "server_port": 5004,
+            "method": "aes-256-gcm",
+            "password": "g5MeD6Ft3CWlJId"
         },
       {
             "tag": "🇺🇸United+States",
@@ -326,12 +306,20 @@
             "password": "g13S7doXar0A"
         },
       {
-            "tag": "🇬🇧GB",
+            "tag": "🇬🇧GB_1",
             "type": "shadowsocks",
             "server": "series-a2.varzesh360.co",
             "server_port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "mps3FwmDjLrWaOVg"
+        },
+      {
+            "tag": "🇬🇧GB_2",
+            "type": "shadowsocks",
+            "server": "series-a2-me.samanehha.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "Bog0ELmMM9DSxDdQ"
         },
       {
             "tag": "🇩🇪Germany",
@@ -342,18 +330,26 @@
             "password": "Y6R9pAtvxxzmGC"
         },
       {
-            "tag": "🇫🇷France",
+            "tag": "🇫🇷France_1",
             "type": "shadowsocks",
-            "server": "fr.fourzerofour.web.id",
+            "server": "149.202.82.172",
+            "server_port": 8008,
+            "method": "aes-256-gcm",
+            "password": "KixLvKzwjekG00rm"
+        },
+      {
+            "tag": "🇫🇷France_2",
+            "type": "shadowsocks",
+            "server": "149.202.82.172",
             "server_port": 8008,
             "method": "aes-256-gcm",
             "password": "XKFKl2rULjIp74"
         },
       {
-            "tag": "🇧🇭BH",
+            "tag": "🇧🇭Bahrain",
             "type": "shadowsocks",
             "server": "series-a2-me.varzesh360.co",
-            "server_port": 8008,
+            "server_port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "Bog0ELmMM9DSxDdQ"
         }
