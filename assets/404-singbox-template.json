@@ -88,8 +88,8 @@
          "🇹🇭True-TH",
          "🇹🇭Thailand",
          "🇲🇲ATOM(500MB)",
-         "🇯🇵Japan",
-         "Japan🇯🇵",
+         "🇯🇵Japan_1",
+         "🇯🇵Japan_2",
          "🇭🇰HK",
          "🇮🇪IE_1",
          "🇮🇪IE_2",
@@ -114,8 +114,8 @@
          "🇹🇭True-TH",
          "🇹🇭Thailand",
          "🇲🇲ATOM(500MB)",
-         "🇯🇵Japan",
-         "Japan🇯🇵",
+         "🇯🇵Japan_1",
+         "🇯🇵Japan_2",
          "🇭🇰HK",
          "🇮🇪IE_1",
          "🇮🇪IE_2",
@@ -232,7 +232,7 @@
             "password": "9Vd7bQc50s773XQE01G+L2726dvm0Cuq150mxtBgkKc="
         },
       {
-      "tag" : "🇯🇵Japan",
+      "tag" : "Japan🇯🇵_1",
       "type" : "vmess",
       "server" : "jp.fourzerofour.web.id",
       "server_port" : 1069,
@@ -245,13 +245,15 @@
       "transport" : {}
     },
       {
-            "tag": "Japan🇯🇵",
-            "type": "shadowsocks",
-            "server": "sg.premium404.web.id",
-            "server_port": 25056,
-            "method": "chacha20-ietf-poly1305",
-            "password": "1TB1N/FO5QA4NoIrAT8IFmf0x3gynq3ZzCIhctObHoY="
-        },
+      "tag": "Japan🇯🇵_2",
+      "server": "jp-am48-6.eqnode.net",
+      "server_port": 8081,
+      "type": "shadowsocksr",
+      "method": "aes-256-cfb",
+      "password": "eAokbaDN6",
+      "obfs": "tls1.2_ticket_auth",
+      "protocol": "origin"
+    },
       {
       "tag" : "🇭🇰HK",
       "type" : "vmess",
