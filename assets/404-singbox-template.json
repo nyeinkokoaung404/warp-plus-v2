@@ -149,7 +149,7 @@
      {
             "tag": "🏠t.me/nkka404",
             "type": "wireguard",
-            "server": "162.159.192.79",
+            "server": "wavemoney.com.mm",
             "server_port": 880,
             "local_address": [
                 "172.16.0.2/32",
@@ -168,7 +168,7 @@
         {
             "tag": "🏠t.me/premium_channel_404",
             "type": "wireguard",
-            "server": "162.159.195.169",
+            "server": "mpt.com.mm",
             "server_port": 854,
             "local_address": [
                 "172.16.0.2/32",
