@@ -88,8 +88,10 @@
          "🇹🇭True-TH",
          "🇹🇭Thailand",
          "🇲🇲ATOM(500MB)",
-         "🇯🇵Japan_1",
-         "🇯🇵Japan_2",
+         "🇯🇵Japan01",
+         "🇯🇵Japan02",
+         "🇯🇵Japan03",
+         "🇯🇵Japan04",
          "🇭🇰HK",
          "🇮🇪IE_1",
          "🇮🇪IE_2",
@@ -114,8 +116,10 @@
          "🇹🇭True-TH",
          "🇹🇭Thailand",
          "🇲🇲ATOM(500MB)",
-         "🇯🇵Japan_1",
-         "🇯🇵Japan_2",
+         "🇯🇵Japan01",
+         "🇯🇵Japan02",
+         "🇯🇵Japan03",
+         "🇯🇵Japan04",
          "🇭🇰HK",
          "🇮🇪IE_1",
          "🇮🇪IE_2",
@@ -221,7 +225,31 @@
             "password": "9Vd7bQc50s773XQE01G+L2726dvm0Cuq150mxtBgkKc="
         },
       {
-      "tag" : "Japan🇯🇵_1",
+      "server": "mf-s1-jp.palu123.com",
+      "server_port": 22207,
+      "tag": "🇯🇵Japan01",
+      "type": "hysteria2",
+      "password": "a64a81de-bbf7-48fc-9114-63ac4ee78744",
+      "tls": {
+        "enabled": true,
+        "server_name": "mf-s1-jp.palu123.com",
+        "insecure": true
+      }
+    },
+    {
+      "server": "mf-s1-jp.palu123.com",
+      "server_port": 22207,
+      "tag": "🇯🇵Japan02",
+      "type": "hysteria2",
+      "password": "a64a81de-bbf7-48fc-9114-63ac4ee78744",
+      "tls": {
+        "enabled": true,
+        "server_name": "mf-s1-jp.palu123.com",
+        "insecure": true
+      }
+    },
+      {
+      "tag" : "🇯🇵Japan03",
       "type" : "vmess",
       "server" : "jp.fourzerofour.web.id",
       "server_port" : 1069,
@@ -234,7 +262,7 @@
       "transport" : {}
     },
       {
-      "tag": "Japan🇯🇵_2",
+      "tag": "🇯🇵Japan04",
       "server": "jp-am48-6.eqnode.net",
       "server_port": 8081,
       "type": "shadowsocksr",
