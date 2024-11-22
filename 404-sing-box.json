@@ -88,8 +88,10 @@
                 "\ud83c\uddf9\ud83c\uddedTrue-TH",
                 "\ud83c\uddf9\ud83c\uddedThailand",
                 "\ud83c\uddf2\ud83c\uddf2ATOM(500MB)",
-                "\ud83c\uddef\ud83c\uddf5Japan_1",
-                "\ud83c\uddef\ud83c\uddf5Japan_2",
+                "\ud83c\uddef\ud83c\uddf5Japan01",
+                "\ud83c\uddef\ud83c\uddf5Japan02",
+                "\ud83c\uddef\ud83c\uddf5Japan03",
+                "\ud83c\uddef\ud83c\uddf5Japan04",
                 "\ud83c\udded\ud83c\uddf0HK",
                 "\ud83c\uddee\ud83c\uddeaIE_1",
                 "\ud83c\uddee\ud83c\uddeaIE_2",
@@ -114,8 +116,10 @@
                 "\ud83c\uddf9\ud83c\uddedTrue-TH",
                 "\ud83c\uddf9\ud83c\uddedThailand",
                 "\ud83c\uddf2\ud83c\uddf2ATOM(500MB)",
-                "\ud83c\uddef\ud83c\uddf5Japan_1",
-                "\ud83c\uddef\ud83c\uddf5Japan_2",
+                "\ud83c\uddef\ud83c\uddf5Japan01",
+                "\ud83c\uddef\ud83c\uddf5Japan02",
+                "\ud83c\uddef\ud83c\uddf5Japan03",
+                "\ud83c\uddef\ud83c\uddf5Japan04",
                 "\ud83c\udded\ud83c\uddf0HK",
                 "\ud83c\uddee\ud83c\uddeaIE_1",
                 "\ud83c\uddee\ud83c\uddeaIE_2",
@@ -139,7 +143,7 @@
         {
             "tag": "\ud83d\ude80TEHRAN-404",
             "type": "vless",
-            "server": "188.114.99.104",
+            "server": "188.114.96.229",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -159,7 +163,7 @@
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "188.114.99.50",
+            "server": "188.114.99.113",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -263,7 +267,31 @@
             "password": "9Vd7bQc50s773XQE01G+L2726dvm0Cuq150mxtBgkKc="
         },
         {
-            "tag": "Japan\ud83c\uddef\ud83c\uddf5_1",
+            "server": "mf-s1-jp.palu123.com",
+            "server_port": 22207,
+            "tag": "\ud83c\uddef\ud83c\uddf5Japan01",
+            "type": "hysteria2",
+            "password": "a64a81de-bbf7-48fc-9114-63ac4ee78744",
+            "tls": {
+                "enabled": true,
+                "server_name": "mf-s1-jp.palu123.com",
+                "insecure": true
+            }
+        },
+        {
+            "server": "mf-s1-jp.palu123.com",
+            "server_port": 22207,
+            "tag": "\ud83c\uddef\ud83c\uddf5Japan02",
+            "type": "hysteria2",
+            "password": "a64a81de-bbf7-48fc-9114-63ac4ee78744",
+            "tls": {
+                "enabled": true,
+                "server_name": "mf-s1-jp.palu123.com",
+                "insecure": true
+            }
+        },
+        {
+            "tag": "\ud83c\uddef\ud83c\uddf5Japan03",
             "type": "vmess",
             "server": "jp.fourzerofour.web.id",
             "server_port": 1069,
@@ -276,7 +304,7 @@
             "transport": {}
         },
         {
-            "tag": "Japan\ud83c\uddef\ud83c\uddf5_2",
+            "tag": "\ud83c\uddef\ud83c\uddf5Japan04",
             "server": "jp-am48-6.eqnode.net",
             "server_port": 8081,
             "type": "shadowsocksr",
