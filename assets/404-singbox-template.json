@@ -87,7 +87,7 @@
          "🏠t.me/premium_channel_404",
          "🇹🇭True-TH",
          "🇹🇭Thailand",
-         "🇲🇲ATOM(500MB)",
+         "🇯🇵JAPAN",
          "🇯🇵Japan01",
          "🇯🇵Japan02",
          "🇯🇵Japan03",
@@ -115,7 +115,7 @@
          "🏠t.me/premium_channel_404",
          "🇹🇭True-TH",
          "🇹🇭Thailand",
-         "🇲🇲ATOM(500MB)",
+         "🇯🇵JAPAN",
          "🇯🇵Japan01",
          "🇯🇵Japan02",
          "🇯🇵Japan03",
@@ -217,13 +217,16 @@
             "password": "f8f7aCzcPKbsF8p3"
         },
       {
-            "tag": "🇲🇲ATOM(500MB)",
-            "type": "shadowsocks",
-            "server": "188.166.251.246",
-            "server_port": 13771,
-            "method": "chacha20-ietf-poly1305",
-            "password": "9Vd7bQc50s773XQE01G+L2726dvm0Cuq150mxtBgkKc="
-        },
+         "server": "jp-am48-6.eqnode.net",
+         "server_port": 8081,
+         "tag": "🇯🇵JAPAN",
+         "type": "shadowsocksr",
+         "attach": "",
+         "method": "aes-256-cfb",
+         "password": "eAokbaDN6",
+         "obfs": "tls1.2_ticket_auth",
+         "protocol": "origin"
+      },
       {
       "server": "mf-s1-jp.palu123.com",
       "server_port": 22207,
