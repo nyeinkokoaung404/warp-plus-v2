@@ -211,10 +211,10 @@
       {
             "tag": "🇹🇭Thailand",
             "type": "shadowsocks",
-            "server": "119.59.98.58",
-            "server_port": 990,
-            "method": "chacha20-ietf-poly1305",
-            "password": "f8f7aCzcPKbsF8p3"
+            "server": "165.154.247.51",
+            "server_port": 42947,
+            "method": "aes-256-gcm",
+            "password": "Y10AxsKMuMavtNDviM/8BPagV/ezpzWisnN5bKcBJRI="
         },
       {
          "server": "jp-am48-6.eqnode.net",
