@@ -141,29 +141,13 @@
             "url": "http://www.gstatic.com/generate_204"
         },
         {
-            "tag": "\ud83d\ude80TEHRAN-404",
-            "type": "vless",
-            "server": "188.114.98.62",
-            "server_port": 443,
-            "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
-            "transport": {
-                "path": "/SG1",
-                "type": "ws",
-                "headers": {
-                    "Host": "agustus.jrflashervpn.my.id"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "agustus.jrflashervpn.my.id",
-                "insecure": true
-            },
-            "tcp_fast_open": false
+            "tag": "direct",
+            "type": "direct"
         },
         {
             "tag": "\ud83d\ude80BERLIN-404",
             "type": "vless",
-            "server": "188.114.99.15",
+            "server": "188.114.97.122",
             "server_port": 443,
             "uuid": "765e5bee-afec-410b-ad82-3e94d45e3e56",
             "transport": {
@@ -179,10 +163,6 @@
                 "insecure": true
             },
             "tcp_fast_open": false
-        },
-        {
-            "tag": "direct",
-            "type": "direct"
         },
         {
             "tag": "dns-out",
