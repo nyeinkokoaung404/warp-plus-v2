@@ -2,5 +2,5 @@
 //profile-update-interval: 1
 //subscription-userinfo: upload=5368709120; download=117037858816; total=955630223360; expire=1762677732
 //profile-web-page-url: https://github.com/nyeinkokoaung404
-//last update on: 2025-11-19 23:21:24
-warp://188.114.99.68:1074?ifp=1-3&ifpm=m4#TEHRAN-404&&detour=warp://162.159.192.103:4500?ifp=1-2&ifpm=m5#BERLIN-404
+//last update on: 2025-11-20 01:49:15
+warp://188.114.98.122:4233?ifp=1-3&ifpm=m4#TEHRAN-404&&detour=warp://188.114.99.95:890?ifp=1-2&ifpm=m5#BERLIN-404
